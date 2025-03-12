@@ -1,0 +1,25 @@
+[
+    {
+      "name": "Home",
+      "link": "/",
+      "icon": "FaHome",
+      "submenus": []
+    },
+    {
+      "name": "Java",
+      "link": "/java",
+      "icon": "FaFolder",
+      "submenus": [
+        { "name": "SQL", "link": "/categories/sql" },
+        { "name": "React", "link": "/categories/react" },
+        { "name": "Node.js", "link": "/categories/nodejs" }
+      ]
+    },
+    {
+      "name": "About",
+      "link": "/about",
+      "icon": "FaUser",
+      "submenus": []
+    }
+  ]
+  

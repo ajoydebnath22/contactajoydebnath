@@ -1,0 +1,13 @@
+.video-thumbnail {
+    width: 100%;  /* Make it responsive */
+    max-width: 300px;  /* Set a reasonable max width */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 8px;  /* Optional: Add rounded corners */
+    cursor: pointer;  /* Show it's clickable */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .video-thumbnail:hover {
+    transform: scale(1.05);  /* Slight zoom effect on hover */
+  }
+  

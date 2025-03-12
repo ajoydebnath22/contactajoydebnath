@@ -15,14 +15,9 @@ function App() {
 
           {/* Main Content - 9 columns on medium screens, full width on small screens */}
           <div className="col-md-9 col-12 p-4">
-            <Routes>
-              <Route path="/" element={<ContentPage topic="Home" />} />
-              <Route path="/java" element={<ContentPage topic="Java" />} />
-              <Route path="/categories/javascript" element={<ContentPage topic="JavaScript" />} />
-              <Route path="/categories/react" element={<ContentPage topic="React" />} />
-              <Route path="/categories/nodejs" element={<ContentPage topic="Node.js" />} />
-              <Route path="/about" element={<ContentPage topic="About" />} />
-            </Routes>
+          <Routes>
+            <Route path="/categories/:topic" element={<ContentPage />} />
+          </Routes>
           </div>
         </div>
       </div>

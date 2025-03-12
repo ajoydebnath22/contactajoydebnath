@@ -3,13 +3,15 @@
       "title": "SQL (Structured Query Language)",
       "description": "SQL is a standardized programming language for managing and manipulating relational databases (RDBMS). It is widely used to interact with databases and perform various operations, such as querying, updating, inserting, and deleting data.",
       "image": "/images/sql.jpg",
-      "video": "https://www.youtube.com/watch?v=fxdKvG47P8Q&t=3s"
+      "video": "https://www.youtube.com/watch?v=fxdKvG47P8Q&t=3s",
+      "googleDoc": "https://docs.google.com/document/d/1dDzbyyUHvdYfas3aHuORIC5ZgiwpiTASst9knxrZBJg/edit?usp=sharing"
     },
     "JavaScript": {
       "title": "JavaScript",
       "description": "JavaScript is a programming language that allows you to implement complex features on web pages. Every time a web page does more than just sit there and display static information, JavaScript is probably involved.",
       "image": "/images/javascript.jpg",
-      "video": "https://www.youtube.com/embed/W6NZfCO5SIk"
+      "video": "https://www.youtube.com/embed/W6NZfCO5SIk",
+      "googleDoc": "https://docs.google.com/document/d/1dDzbyyUHvdYfas3aHuORIC5ZgiwpiTASst9knxrZBJg/edit?usp=sharing"
     }
   }
   

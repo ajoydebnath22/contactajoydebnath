@@ -30,31 +30,62 @@ const ContentPage = () => {
     } else if (videoUrl.includes("youtube.com/embed/")) {
       videoId = videoUrl.split("embed/")[1]?.split("?")[0];
     }
-  
     return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : "";
   };
 
   return (
     <div className="container mt-4">
       <div className="row">
-        {/* Left Side: Content with Image */}
+        {/* Left Side: Content with Image, Basic Theory, and Google Doc */}
         <div className="col-md-8">
+          {/* Title and Description */}
           <h2>{content.title}</h2>
           <p>{content.description}</p>
-          <img src={content.image} alt={content.title} className="img-fluid rounded" />
+  
+          {/* Basic Theory Section 
+          <div className="basic-theory mb-4">
+            <h4>Basic Theory</h4>
+            <p>
+              SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS). It is particularly useful for handling structured data, i.e., data incorporating relations among entities and variables.
+            </p>
+            <p>
+              JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a language that is also characterized as dynamic, weakly typed, prototype-based, and multi-paradigm.
+            </p>
+          </div> */}
+  
+          {/* Google Doc Section */}
+          <div className="google-doc mb-4">
+            <h4>Google Doc</h4>
+            <iframe
+              src={`${content.googleDoc}/pub?embedded=true`}
+              width="100%"
+              height="500px"
+              frameBorder="0"
+              title="Google Doc"
+              className="google-doc-iframe"
+            ></iframe>
+            <a
+              href={`${content.googleDoc}/pub?embedded=true`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary mt-3"
+            >
+              Open Google Doc in New Tab
+            </a>
+          </div>
         </div>
-
+  
         {/* Right Side: Embedded YouTube Video */}
         <div className="col-md-4">
           <h4>Watch Tutorial</h4>
           <div className="embed-responsive embed-responsive-16by9">
-          <a href={content.video} target="_blank" rel="noopener noreferrer">
-            <img 
-              src={getYouTubeThumbnail(content.video)} 
-              alt="Video Thumbnail" 
-              className="video-thumbnail"
-            />
-          </a>
+            <a href={content.video} target="_blank" rel="noopener noreferrer">
+              <img
+                src={getYouTubeThumbnail(content.video)}
+                alt="Video Thumbnail"
+                className="video-thumbnail img-fluid rounded"
+              />
+            </a>
           </div>
         </div>
       </div>

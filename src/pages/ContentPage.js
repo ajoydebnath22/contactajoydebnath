@@ -1,21 +1,19 @@
 import React from 'react';
-import './ContentPage.css';
-
-// Tutorial data based on topics
-const tutorialData = {
-  Home: "Welcome to the tutorial website! Select a topic from the side menu to start learning.",
-  Java: `Java is a high-level, object-oriented programming language developed by Sun Microsystems in 1995. It is platform-independent and widely used for web, mobile, and enterprise applications.`,
-  JavaScript: `JavaScript is a lightweight, interpreted programming language primarily used for web development. It enables dynamic content, interactivity, and client-side scripting.`,
-  React: `React is a JavaScript library for building user interfaces, developed by Facebook. It allows developers to create reusable UI components and manage state efficiently.`,
-  "Node.js": `Node.js is a runtime environment that allows JavaScript to run on the server side. It uses an event-driven, non-blocking I/O model, making it efficient for building scalable applications.`,
-  About: "This website is dedicated to providing high-quality tutorials on Java, JavaScript, React, and Node.js.",
-};
 
 const ContentPage = ({ topic }) => {
+  const contentData = {
+    Home: 'Welcome to the Home Page!',
+    Java: 'SQL (Structured Query Language) is a standardized programming language for managing and manipulating relational databases(RDBMS : Relational Database Management System). It is widely used to interact with databases and perform various operations, such as querying, updating, inserting, and deleting data.',
+    JavaScript: 'JavaScript is a versatile scripting language...',
+    React: 'React is a JavaScript library for building UI...',
+    'Node.js': 'Node.js is a runtime for executing JavaScript on the server...',
+    About: 'This is an About page.',
+  };
+
   return (
-    <div className="content-container">
-      <h1>{topic} Tutorial</h1>
-      <p>{tutorialData[topic] || "Content coming soon..."}</p>
+    <div>
+      <h2 className="mb-4">{topic}</h2>
+      <p>{contentData[topic] || 'Content not found.'}</p>
     </div>
   );
 };

@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaHome, FaCode, FaFolder, FaUser, FaSearch, FaSun, FaMoon } from 'react-icons/fa';
-import './SideMenu.css';
+import { FaHome, FaFolder, FaUser, FaSearch } from 'react-icons/fa';
 
 const SideMenu = () => {
   const [expandedMenu, setExpandedMenu] = useState(null);
-  //const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Menu data
   const menuItems = [
     {
       name: 'Home',
@@ -33,43 +30,38 @@ const SideMenu = () => {
     },
   ];
 
-  // Toggle submenu visibility
   const toggleSubmenu = (menuName) => {
     setExpandedMenu(expandedMenu === menuName ? null : menuName);
   };
 
-  // Toggle dark/light mode
-  /*const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle('dark-mode', !isDarkMode);
-  };*/
-
   return (
-    <nav className={`side-menu ${true ? 'dark' : 'light'}`}>
-      <div className="search-bar">
-        <FaSearch className="search-icon" />
-        <input type="text" placeholder="Search posts..." />
+    <nav className="p-3">
+      {/* Search Bar */}
+      <div className="input-group mb-3">
+        <span className="input-group-text">
+          <FaSearch />
+        </span>
+        <input type="text" className="form-control" placeholder="Search..." />
       </div>
-      <ul>
+
+      {/* Menu Items */}
+      <ul className="list-group">
         {menuItems.map((item) => (
-          <li key={item.name}>
-            <div
-              className="menu-item"
-              onClick={() => toggleSubmenu(item.name)}
-            >
-              <span className="icon">{item.icon}</span>
-              <Link to={item.link}>{item.name}</Link>
+          <li key={item.name} className="list-group-item bg-dark text-white">
+            <div className="d-flex justify-content-between align-items-center" onClick={() => toggleSubmenu(item.name)}>
+              <div>
+                {item.icon} <Link to={item.link} className="text-white text-decoration-none ms-2">{item.name}</Link>
+              </div>
               {item.submenus.length > 0 && (
-                <span className="arrow">
-                  {expandedMenu === item.name ? '▼' : '▶'}
-                </span>
+                <span className="ms-auto">{expandedMenu === item.name ? '▼' : '▶'}</span>
               )}
             </div>
-            {expandedMenu === item.name && item.submenus.length > 0 && (
-              <ul className="submenu">
+            {/* Submenus */}
+            {expandedMenu === item.name && (
+              <ul className="list-group mt-2">
                 {item.submenus.map((submenu) => (
-                  <li key={submenu.name}>
-                    <Link to={submenu.link}>{submenu.name}</Link>
+                  <li key={submenu.name} className="list-group-item bg-secondary">
+                    <Link to={submenu.link} className="text-white text-decoration-none">{submenu.name}</Link>
                   </li>
                 ))}
               </ul>

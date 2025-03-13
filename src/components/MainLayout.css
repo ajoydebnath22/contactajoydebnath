@@ -44,3 +44,22 @@
       transform: translateX(0);
     }
   }
+
+  /* Make Fluid */
+
+  /* Add to your CSS */
+.content-area {
+  padding: 20px 30px;
+}
+
+@media (max-width: 768px) {
+  .content-area {
+    padding: 15px; /* Reduced padding for mobile */
+    width: 100% !important; /* Full width on mobile */
+  }
+}
+
+/* Optional: Add smooth content width transition */
+.content-area {
+  transition: margin-left 0.3s ease, width 0.3s ease;
+}

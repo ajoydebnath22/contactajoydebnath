@@ -27,13 +27,20 @@ const MainLayout = ({ children }) => {
         setIsMenuOpen={setIsMenuOpen} 
       />
       
-      <main className="content-area" style={{
-        marginLeft: !isMobile && isMenuOpen ? '250px' : '0',
-        transition: 'margin-left 0.3s ease'
-      }}>
-        {children}
+      <main 
+        className="content-area" 
+        style={{
+          marginLeft: !isMobile && isMenuOpen ? '250px' : '0',
+          transition: 'margin-left 0.3s ease',
+          padding: '20px 10px', // Added fluid-like padding
+          minHeight: '100vh',
+          width: `calc(100% - ${!isMobile && isMenuOpen ? '250px' : '0'})` // Ensure proper width calculation
+        }}
+      >
+        <div className="container-fluid px-lg-5"> {/* Nested container-fluid */}
+          {children}
+        </div>
       </main>
-
       {isMobile && isMenuOpen && (
         <div className="menu-overlay" onClick={() => setIsMenuOpen(false)} />
       )}

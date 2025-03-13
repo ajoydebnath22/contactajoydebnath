@@ -14,7 +14,12 @@ function App() {
           </div>
 
           {/* Main Content - 9 columns on medium screens, full width on small screens */}
-          <div className="col-md-9 col-12 p-4">
+          <div className="col-md-9 col-12 p-4" style={{ 
+            height: "100vh", 
+            overflowY: "scroll",
+            backgroundColor: "#f0f0f0",
+            padding: "20px"
+          }} >
           <Routes>
             <Route path="/categories/:topic" element={<ContentPage />} />
           </Routes>

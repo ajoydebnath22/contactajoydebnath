@@ -1,0 +1,29 @@
+[
+  {
+    "title": "SQL Basics for Beginners",
+    "description": "Learn the fundamentals of SQL with this beginner-friendly tutorial.",
+    "video": "https://www.youtube.com/watch?v=fxdKvG47P8Q",
+    "topic": "SQL",
+    "date": "2025-03-01"
+  },
+  {
+    "title": "JavaScript Async & Await Explained",
+    "description": "Master JavaScript asynchronous programming using Async & Await.",
+    "video": "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+    "topic": "JavaScript",
+    "date": "2025-02-25"
+  },{
+    "title": "SQL Basics for Beginners",
+    "description": "Learn the fundamentals of SQL with this beginner-friendly tutorial.",
+    "video": "https://www.youtube.com/watch?v=fxdKvG47P8Q",
+    "topic": "SQL",
+    "date": "2025-03-01"
+  },
+  {
+    "title": "JavaScript Async & Await Explained",
+    "description": "Master JavaScript asynchronous programming using Async & Await.",
+    "video": "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+    "topic": "JavaScript",
+    "date": "2025-02-25"
+  }
+]

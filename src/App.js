@@ -10,6 +10,7 @@ function App() {
     <div className='container-fluid'>
         <MainLayout>
           <Routes>
+            <Route path="/" element={<HomePage/>} />
             <Route path="/categories/:topic" element={<ContentPage />} />
           </Routes>
         </MainLayout>

@@ -1,0 +1,268 @@
+.container {
+  max-width: 1100px;
+}
+
+/* Latest Video Section */
+.latest-video-section h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.latest-video-card {
+  display: flex;
+  gap: 15px;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.latest-video-thumbnail {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.latest-video-info h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.latest-video-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Style for Video Card */
+.video-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  text-align: center;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
+
+/* Thumbnail container */
+.video-thumbnail-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Hover effect */
+.video-thumbnail-container:hover {
+  transform: scale(1.05);
+}
+
+/* Thumbnail Image */
+.video-thumbnail {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Overlay Effect */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.video-thumbnail-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Play Button */
+.play-icon {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Video Details */
+.video-info {
+  padding: 10px;
+}
+
+.video-title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.video-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.video-topic {
+  display: block;
+  font-size: 12px;
+  color: #007bff;
+}
+
+.video-date {
+  display: block;
+  font-size: 12px;
+  color: #888;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .latest-video-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .latest-video-thumbnail {
+    width: 100%;
+  }
+
+  .video-title {
+    font-size: 16px;
+  }
+
+  .video-description {
+    font-size: 13px;
+  }
+
+  .play-icon {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .video-thumbnail-container {
+    border-radius: 5px;
+  }
+
+  .video-thumbnail {
+    border-radius: 5px;
+  }
+
+  .video-title {
+    font-size: 14px;
+  }
+
+  .video-description {
+    font-size: 12px;
+  }
+
+  .play-icon {
+    font-size: 25px;
+  }
+}
+
+
+/* 🔍 Search Bar */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 📺 Video Section Styling */
+.video-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-thumbnail-container {
+  position: relative;
+}
+
+.video-thumbnail {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-thumbnail-container:hover .overlay {
+  opacity: 1;
+}
+
+.play-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .search-input {
+    width: 90%;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .video-title {
+    font-size: 1rem;
+  }
+
+  .video-description {
+    font-size: 0.85rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+/* MainLayout.css */
+.main-layout {
+    position: relative;
+  }
+  
+  .content-area {
+    min-height: 100vh;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 998;
+  }
+
+  
+  /* Desktop Behavior */
+  @media (min-width: 769px) {
+    .side-menu {
+      transform: translateX(-250px); /* Start hidden */
+    }
+    
+    .side-menu.active {
+      transform: translateX(0);
+    }
+  
+    .content-area.shifted {
+      margin-left: 250px;
+    }
+  }
+  
+  /* Mobile Behavior */
+  @media (max-width: 768px) {
+    .side-menu {
+      transform: translateX(-100%);
+    }
+    
+    .side-menu.active {
+      transform: translateX(0);
+    }
+  }

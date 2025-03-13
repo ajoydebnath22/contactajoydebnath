@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import GoogleDocPreview from "../components/GoogleDocPreview";
 import './ContentPage.css';
 
 const ContentPage = () => {
@@ -56,22 +57,7 @@ const ContentPage = () => {
           {/* Google Doc Section */}
           <div className="google-doc mb-4">
             <h4>Google Doc</h4>
-            <iframe
-              src={`${content.googleDoc}/pub?embedded=true`}
-              width="100%"
-              height="500px"
-              frameBorder="0"
-              title="Google Doc"
-              className="google-doc-iframe"
-            ></iframe>
-            <a
-              href={`${content.googleDoc}/pub?embedded=true`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary mt-3"
-            >
-              Open Google Doc in New Tab
-            </a>
+            <GoogleDocPreview docId={content.googleDoc}/>          
           </div>
         </div>
   

@@ -107,7 +107,7 @@ const HomePage = () => {
             </div>
           )}
 
-          <div className="row">
+          <div className="row video-list">
             {filteredVideos.slice(0, visibleCount).map((video, index) => (
               <div key={index} className="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div className="video-card">

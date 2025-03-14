@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import GoogleDocPreview from "../components/GoogleDocPreview";
+import ScrollToTop from '../components/ScrollToTop';
 import './ContentPage.css';
 
 const ContentPage = () => {
@@ -75,6 +76,7 @@ const ContentPage = () => {
           </div>
         </div>
       </div>
+      <ScrollToTop/>
     </div>
   );
 };

@@ -2,23 +2,22 @@ import React, { useEffect, useState } from "react";
 import "../css/HomePage.css";
 import ScrollToTop from '../components/ScrollToTop';
 
+const ITEMS_PER_PAGE = 6; // Number of videos to load at a time
+
 const HomePage = () => {
   const [videos, setVideos] = useState([]);
-  const [searchQuery, setSearchQuery] = useState(""); // 🔍 Search state
+  const [searchQuery, setSearchQuery] = useState("");
+  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
 
   useEffect(() => {
     fetch("/db/videos.json")
       .then((response) => response.json())
       .then((data) => {
-        const sortedVideos = data.sort((a, b) => b.sequence - a.sequence); // Sort by latest
+        const sortedVideos = data.sort((a, b) => b.sequence - a.sequence);
         setVideos(sortedVideos);
       })
       .catch((error) => console.error("Error fetching video data:", error));
   }, []);
-
-  // add scroll bar 
-
-  // add scroll bar end
 
   const getYouTubeThumbnail = (videoUrl) => {
     let videoId = "";
@@ -32,7 +31,6 @@ const HomePage = () => {
     return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : "";
   };
 
-  // 🔍 Filter videos based on search input
   const filteredVideos = videos.filter(
     (video) =>
       video.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -40,9 +38,23 @@ const HomePage = () => {
       video.description.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  // Infinite Scroll - Detect when the user reaches the bottom
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        window.innerHeight + document.documentElement.scrollTop >=
+        document.documentElement.offsetHeight - 10
+      ) {
+        setVisibleCount((prevCount) => prevCount + ITEMS_PER_PAGE);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="container mt-4">
-      {/* 🔍 Search Bar */}
       <div className="search-container">
         <input
           type="text"
@@ -53,7 +65,6 @@ const HomePage = () => {
         />
       </div>
 
-      {/* Latest Video Section */}
       {filteredVideos.length > 0 && (
         <div className="latest-video-section mb-4">
           <h3>🔥 Latest Video</h3>
@@ -76,9 +87,8 @@ const HomePage = () => {
         </div>
       )}
 
-      {/* Video List Section */}
       <div className="row">
-        {filteredVideos.map((video, index) => (
+        {filteredVideos.slice(0, visibleCount).map((video, index) => (
           <div key={index} className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div className="video-card">
               <a href={video.video} target="_blank" rel="noopener noreferrer">
@@ -102,6 +112,7 @@ const HomePage = () => {
           </div>
         ))}
       </div>
+
       <ScrollToTop />
     </div>
   );

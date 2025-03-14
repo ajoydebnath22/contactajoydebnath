@@ -9,7 +9,7 @@ const HomePage = () => {
     fetch("/db/videos.json")
       .then((response) => response.json())
       .then((data) => {
-        const sortedVideos = data.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by latest
+        const sortedVideos = data.sort((a, b) => b.sequence - a.sequence); // Sort by latest
         setVideos(sortedVideos);
       })
       .catch((error) => console.error("Error fetching video data:", error));
@@ -92,7 +92,6 @@ const HomePage = () => {
                 <h5 className="video-title">{video.title}</h5>
                 <p className="video-description">{video.description}</p>
                 <span className="video-topic">📌 {video.topic}</span>
-                <span className="video-date">📅 {video.date}</span>
               </div>
             </div>
           </div>

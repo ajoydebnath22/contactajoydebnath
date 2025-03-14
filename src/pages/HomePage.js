@@ -54,7 +54,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-1">
       <div className="search-container">
         <input
           type="text"
@@ -66,7 +66,7 @@ const HomePage = () => {
       </div>
 
       {filteredVideos.length > 0 && (
-        <div className="latest-video-section mb-4">
+        <div className="latest-video-section mb-4 mt-3">
           <h3>🔥 Latest Video</h3>
           <div className="latest-video-card">
             <a href={filteredVideos[0].video} target="_blank" rel="noopener noreferrer">

@@ -176,29 +176,6 @@
 }
 
 
-/* 🔍 Search Bar */
-.search-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.search-input {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  font-size: 1rem;
-  border: 2px solid #ddd;
-  border-radius: 20px;
-  outline: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.search-input:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
 /* 📺 Video Section Styling */
 .video-card {
   background: white;

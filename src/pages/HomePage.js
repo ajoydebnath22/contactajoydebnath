@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../css/HomePage.css";
+import ScrollToTop from '../components/ScrollToTop';
 
 const HomePage = () => {
   const [videos, setVideos] = useState([]);
@@ -14,6 +15,10 @@ const HomePage = () => {
       })
       .catch((error) => console.error("Error fetching video data:", error));
   }, []);
+
+  // add scroll bar 
+
+  // add scroll bar end
 
   const getYouTubeThumbnail = (videoUrl) => {
     let videoId = "";
@@ -97,6 +102,7 @@ const HomePage = () => {
           </div>
         ))}
       </div>
+      <ScrollToTop />
     </div>
   );
 };

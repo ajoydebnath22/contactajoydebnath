@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "../css/HomePage.css";
 import ScrollToTop from '../components/ScrollToTop';
 import BuyMeACoffee from '../components/BuyMeACoffee';
+import FloatingLinks from '../components/FloatingLinks';
+
 
 const ITEMS_PER_PAGE = 6;
 
@@ -146,6 +148,7 @@ const HomePage = () => {
 
       <ScrollToTop />
       <BuyMeACoffee />
+      <FloatingLinks/>
     </div>
   );
 };

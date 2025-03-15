@@ -1,9 +1,9 @@
 /* Floating "Buy Me a Coffee" Small Round Button */
 .coffee-btn {
   position: fixed;
-  top: 21vh;
+  top: 30vh;
   right: 2vw;
-  background: linear-gradient(180deg, #ff9900 0%, #ff9900 100%);
+  background: #2C3E50;
   color: white;
   border: none;
   width: 35px;
@@ -12,12 +12,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
   transition: all 0.3s ease;
   z-index: 1000;
   font-size: 16px;
   font-weight: bold;
-  
+  box-shadow: 0 4px 10px rgba(255, 153, 0, 0.5);
 }
 
 
@@ -45,7 +44,7 @@
   text-align: center;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   position: relative;
-  top: -30px; /* Moves modal up */
+  top: -13vh; /* Moves modal up */
   animation: fadeIn 0.3s ease-in-out;
 }
 
@@ -104,11 +103,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  .coffee-popup {
-    top : -10vh;
-  }
-}
 
 /* Download Button */
 .download-btn {
@@ -141,3 +135,4 @@
   width: 300%;
   height: 300%;
 }
+

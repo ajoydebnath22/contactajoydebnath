@@ -20,6 +20,9 @@ const BuyMeACoffee = () =>{
               <h3 className="popup-title">Buy Me a Coffee ☕</h3>
               <p className="popup-description">Scan the QR code below to support me. Thank you বন্ধু! ❤️</p>
               <img src="/SupportMe.png" alt="Buy Me a Coffee QR Code" className="qr-code" />
+              <a href="/SupportMe.png" download="SupportMe.png" className="download-btn">
+                  ⬇ Download QR Code
+              </a>
             </div>
           </div>                        
          )}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './GoogleDocPreview.css';
+//import './GoogleDocPreview.css';
 
 const GoogleDocPreview = ({ docId }) => {
   const previewUrl = `https://docs.google.com/document/d/${docId}/preview`;

@@ -2,7 +2,7 @@
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    right: 2vw;
     width: 40px;
     height: 40px;
     background-color: #2c3e50;
@@ -34,7 +34,7 @@
   @media (max-width: 768px) {
     .scroll-to-top {
       bottom: 20px;
-      right: 20px;
+      right: 2vw;
       width: 35px;
       height: 35px;
     }

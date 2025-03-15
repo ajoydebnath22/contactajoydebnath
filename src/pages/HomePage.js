@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "../css/HomePage.css";
 import ScrollToTop from '../components/ScrollToTop';
+import BuyMeACoffee from '../components/BuyMeACoffee';
 
-const ITEMS_PER_PAGE = 6; // Number of videos to load at a time
+const ITEMS_PER_PAGE = 6;
 
 const HomePage = () => {
   const [videos, setVideos] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
-  const [loading, setLoading] = useState(true); // Loader for initial page load
-  const [loadingMore, setLoadingMore] = useState(false); // Loader for infinite scrolling
+  const [loading, setLoading] = useState(true);
+  const [loadingMore, setLoadingMore] = useState(false);
 
   useEffect(() => {
     fetch("/db/videos.json")
@@ -17,11 +18,11 @@ const HomePage = () => {
       .then((data) => {
         const sortedVideos = data.sort((a, b) => b.sequence - a.sequence);
         setVideos(sortedVideos);
-        setLoading(false); // Stop initial loader once data is loaded
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching video data:", error);
-        setLoading(false); // Stop loader even if error occurs
+        setLoading(false);
       });
   }, []);
 
@@ -44,7 +45,6 @@ const HomePage = () => {
       video.description.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  // Infinite Scroll - Detect when the user reaches the bottom
   useEffect(() => {
     const handleScroll = () => {
       if (
@@ -56,7 +56,7 @@ const HomePage = () => {
           setTimeout(() => {
             setVisibleCount((prevCount) => prevCount + ITEMS_PER_PAGE);
             setLoadingMore(false);
-          }, 1000); // Simulate loading delay
+          }, 1000);
         }
       }
     };
@@ -77,35 +77,32 @@ const HomePage = () => {
         />
       </div>
 
-      {/* 🚀 Show loader when the page initially loads */}
       {loading ? (
-        <div className="page-loader">
+        <div className="loader-container">
           <div className="loader"></div>
-          <p>Loading Tutorial...</p>
+          <p>Loading videos...</p>
         </div>
-      ) : (
+      ) : filteredVideos.length > 0 ? (
         <>
-          {filteredVideos.length > 0 && (
-            <div className="latest-video-section mb-4 mt-3">
-              <h3>🔥 Latest Video</h3>
-              <div className="latest-video-card">
-                <a href={filteredVideos[0].video} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={getYouTubeThumbnail(filteredVideos[0].video)}
-                    alt={filteredVideos[0].title}
-                    className="latest-video-thumbnail"
-                  />
+          <div className="latest-video-section mb-4 mt-3">
+            <h3>🔥 Latest Video</h3>
+            <div className="latest-video-card">
+              <a href={filteredVideos[0].video} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={getYouTubeThumbnail(filteredVideos[0].video)}
+                  alt={filteredVideos[0].title}
+                  className="latest-video-thumbnail"
+                />
+              </a>
+              <div className="latest-video-info">
+                <h4>{filteredVideos[0].title}</h4>
+                <p>{filteredVideos[0].description}</p>
+                <a href={filteredVideos[0].video} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  Watch Now
                 </a>
-                <div className="latest-video-info">
-                  <h4>{filteredVideos[0].title}</h4>
-                  <p>{filteredVideos[0].description}</p>
-                  <a href={filteredVideos[0].video} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                    Watch Now
-                  </a>
-                </div>
               </div>
             </div>
-          )}
+          </div>
 
           <div className="row video-list">
             {filteredVideos.slice(0, visibleCount).map((video, index) => (
@@ -133,17 +130,22 @@ const HomePage = () => {
             ))}
           </div>
 
-          {/* ⏳ Loader for infinite scrolling */}
-          {loadingMore && visibleCount < filteredVideos.length && (
+          {loadingMore && (
             <div className="loader-container">
               <div className="loader"></div>
-              <p>Loading More Tutorial...</p>
+              <p>Loading more videos...</p>
             </div>
           )}
         </>
-      )}
+      ) : searchQuery ? (
+        <div className="no-data-found">
+          <h4>🚫 No Tutorial Found</h4>
+          <p>Please try searching for another topic.</p>
+        </div>
+      ) : null}
 
       <ScrollToTop />
+      <BuyMeACoffee />
     </div>
   );
 };

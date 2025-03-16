@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  z-index: 1000;
+  z-index: 996;
   font-size: 16px;
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(255, 153, 0, 0.5);
@@ -136,3 +136,8 @@
   height: 300%;
 }
 
+@media (min-width: 600px) and (max-width: 1024px) {
+ .coffee-btn{
+  top: 35vh;
+ }
+}

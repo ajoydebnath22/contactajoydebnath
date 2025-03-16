@@ -16,11 +16,11 @@ const FloatingLinks = () => {
       <div className={`links ${isOpen ? "open" : ""}`}>
         
         <a href="https://t.me/contactajoydebnath" target="_blank" rel="noopener noreferrer" className="link telegram">
-          <FaTelegramPlane /> Telegram
+          <FaTelegramPlane /> Join
         </a>
         
         <a href="https://www.youtube.com/channel/UCSgQQLPQ9NhPVAnubCzkcGQ" target="_blank" rel="noopener noreferrer" className="link youtube">
-          <FaYoutube /> YouTube
+          <FaYoutube /> Subscribe
         </a>
         
         {/*

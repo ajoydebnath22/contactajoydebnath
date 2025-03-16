@@ -20,8 +20,6 @@ const ContentPage = () => {
     return <div className="container mt-4">Loading...</div>;
   }
 
-  
-
   const getYouTubeThumbnail = (videoUrl) => {
     let videoId = "";
 

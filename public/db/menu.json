@@ -6,13 +6,12 @@
       "submenus": []
     },
     {
-      "name": "Java",
-      "link": "/java",
+      "name": "SQL",
+      "link": "",
       "icon": "FaFolder",
       "submenus": [
-        { "name": "SQL", "link": "/categories/sql" },
-        { "name": "React", "link": "/categories/react" },
-        { "name": "Node.js", "link": "/categories/nodejs" }
+        { "name": "SQL: Structured Query Language", "link": "/categories/sql" },
+        { "name": "DDL: Data Definition Language", "link": "/categories/ddl" }
       ]
     },
     {

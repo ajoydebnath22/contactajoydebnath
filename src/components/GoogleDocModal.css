@@ -1,0 +1,84 @@
+/* Overlay: Semi-transparent dark background */
+.custom-modal-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Modal Content */
+  .custom-modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 800px;
+    height: 85vh;
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s ease-in-out;
+  }
+  
+  /* Close Button */
+  .custom-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #444;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .custom-close-btn:hover {
+    transform: scale(1.1);
+    color: #ff5c5c;
+  }
+  
+  /* Google Doc Frame */
+  .google-doc-frame {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  /* Mobile-friendly adjustments */
+  @media (max-width: 600px) {
+    .custom-modal-content {
+      width: 95%;
+      height: 80vh;
+      padding: 15px;
+    }
+  
+    .custom-close-btn {
+      font-size: 20px;
+      top: 10px;
+      right: 12px;
+    }
+  }
+  
+  /* Slide-in animation */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

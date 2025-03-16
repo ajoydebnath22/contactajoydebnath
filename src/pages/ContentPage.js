@@ -1,28 +1,31 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import GoogleDocPreview from "../components/GoogleDocPreview";
-import ScrollToTop from '../components/ScrollToTop';
-import './ContentPage.css';
+import ScrollToTop from "../components/ScrollToTop";
+import BuyMeACoffee from "../components/BuyMeACoffee";
+import FloatingLinks from "../components/FloatingLinks";
+import "./ContentPage.css";
 
 const ContentPage = () => {
-  const { topic } = useParams(); // Get topic from URL
+  const { topic } = useParams();
   const [content, setContent] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  // Fetch content from JSON
   useEffect(() => {
     fetch("/db/contentdata.json")
       .then((response) => response.json())
-      .then((data) => setContent(data[topic]))
-      .catch((error) => console.error("Error fetching content data:", error));
+      .then((data) => {
+        setContent(data[topic]);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching content data:", error);
+        setLoading(false);
+      });
   }, [topic]);
-
-  if (!content) {
-    return <div className="container mt-4">Loading...</div>;
-  }
 
   const getYouTubeThumbnail = (videoUrl) => {
     let videoId = "";
-
     if (videoUrl.includes("youtube.com/watch?v=")) {
       videoId = videoUrl.split("v=")[1]?.split("&")[0];
     } else if (videoUrl.includes("youtu.be/")) {
@@ -33,48 +36,59 @@ const ContentPage = () => {
     return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : "";
   };
 
+  if (loading) {
+    return (
+      <div className="loading-container">
+        <div className="spinner"></div>
+        <p>Loading content...</p>
+      </div>
+    );
+  }
+
+  if (!content) {
+    return <div className="container mt-4">Content not found.</div>;
+  }
+
   return (
-    <div className="container mt-4">
+    <div className="content container">
       <div className="row">
-        {/* Left Side: Content with Image, Basic Theory, and Google Doc */}
-        <div className="col-md-8">
-          {/* Title and Description */}
+        {/* Left Side: Content Section */}
+        <div className="col-md-9 content-section">
           <h2>{content.title}</h2>
           <p>{content.description}</p>
-  
-          {/* Basic Theory Section 
-          <div className="basic-theory mb-4">
-            <h4>Basic Theory</h4>
-            <p>
-              SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS). It is particularly useful for handling structured data, i.e., data incorporating relations among entities and variables.
-            </p>
-            <p>
-              JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a language that is also characterized as dynamic, weakly typed, prototype-based, and multi-paradigm.
-            </p>
-          </div> */}
-  
+
           {/* Google Doc Section */}
           <div className="google-doc mb-4">
             <h4>Google Doc</h4>
-            <GoogleDocPreview docId={content.googleDoc}/>          
+            <GoogleDocPreview docId={content.googleDoc} />
           </div>
         </div>
-  
-        {/* Right Side: Embedded YouTube Video */}
-        <div className="col-md-4">
-          <h4>Watch Tutorial</h4>
-          <div className="embed-responsive embed-responsive-16by9">
-            <a href={content.video} target="_blank" rel="noopener noreferrer">
-              <img
-                src={getYouTubeThumbnail(content.video)}
-                alt="Video Thumbnail"
-                className="video-thumbnail img-fluid rounded"
-              />
-            </a>
+
+        {/* Right Side: Video Section */}
+        <div className="col-md-3 video-section">
+          <h4 className="video-title">Watch Tutorials</h4>
+          <div className="video-list">
+            {content.videos.map((video, index) => (
+              <a
+                key={index}
+                href={video}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="video-item"
+              >
+                <img
+                  src={getYouTubeThumbnail(video)}
+                  alt={`Video ${index + 1}`}
+                  className="video-thumbnail img-fluid rounded shadow"
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>
       <ScrollToTop/>
+      <BuyMeACoffee />
+      <FloatingLinks/>
     </div>
   );
 };

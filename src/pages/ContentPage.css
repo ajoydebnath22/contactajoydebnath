@@ -1,13 +1,108 @@
-.video-thumbnail {
-    width: 100%;  /* Make it responsive */
-    max-width: 300px;  /* Set a reasonable max width */
-    height: auto;  /* Maintain aspect ratio */
-    border-radius: 8px;  /* Optional: Add rounded corners */
-    cursor: pointer;  /* Show it's clickable */
-    transition: transform 0.3s ease-in-out;
+/* Google Doc Section */
+.content .google-doc {
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Ensure row takes full height */
+.content .row {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Left Side (Content Section) */
+.content .content-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Video Section Container */
+.content .video-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Fixed Title */
+.content .video-title {
+  position: sticky;
+  top: 0;
+  background: #2C3E50;
+  padding: 8px 0;
+  font-weight: bold;
+  z-index: 10;
+  border-bottom: 2px solid #ddd;
+  color:white;
+}
+
+/* Scrollable Video List */
+.content .video-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: calc(100vh - 160px); /* Adjusted for viewport */
+  padding-right: 4px;
+}
+
+/* Video Item */
+.content .video-item {
+  display: block;
+  margin-bottom: 6px;
+  padding: 6px;
+  text-align: center;
+  border-radius: 6px;
+  transition: background 0.2s ease-in-out;
+}
+
+.content .video-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Smaller Video Thumbnail */
+.content .video-thumbnail {
+  width: 100%;
+  max-width: 200px; /* Reduced size */
+  height: auto;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.content .video-thumbnail:hover {
+  transform: scale(1.02);
+}
+
+/* Scrollbar Styling */
+.content .video-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.content .video-list::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 4px;
+}
+
+.content .video-list::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content .row {
+    flex-direction: column;
   }
-  
-  .video-thumbnail:hover {
-    transform: scale(1.05);  /* Slight zoom effect on hover */
+
+  .content .video-section {
+    height: auto;
+    max-height: 400px;
   }
-  
+
+  .content .video-thumbnail {
+    max-width: 160px; /* Smaller thumbnails on mobile */
+  }
+}

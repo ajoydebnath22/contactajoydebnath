@@ -1,6 +1,7 @@
 /* Google Doc Section */
 .content .google-doc {
-  background: #f9f9f9;
+  background: #2C3E50;
+  color:white;
 }
 
 /* Ensure row takes full height */

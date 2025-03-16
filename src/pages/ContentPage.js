@@ -38,10 +38,10 @@ const ContentPage = () => {
 
   if (loading) {
     return (
-      <div className="loading-container">
-        <div className="spinner"></div>
-        <p>Loading content...</p>
-      </div>
+      <div className="loader-container">
+          <div className="loader"></div>
+          <p>Loading videos...</p>
+        </div>
     );
   }
 

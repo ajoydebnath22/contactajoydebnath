@@ -1,8 +1,6 @@
 /* Google Doc Section */
 .content .google-doc {
-  padding: 15px;
   background: #f9f9f9;
-  border-radius: 8px;
 }
 
 /* Ensure row takes full height */

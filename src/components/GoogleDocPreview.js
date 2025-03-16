@@ -1,9 +1,7 @@
 import React from 'react';
 
-
 const GoogleDocPreview = ({ docId }) => {
   const previewUrl = `https://docs.google.com/document/d/${docId}/preview`;
-
 
   return (
     <div className="doc-preview-container">

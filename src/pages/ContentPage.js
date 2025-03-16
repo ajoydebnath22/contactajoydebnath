@@ -59,7 +59,7 @@ const ContentPage = () => {
 
           {/* Google Doc Section */}
           <div className="google-doc mb-4">
-            <h4>📄 Google Doc</h4>
+            <h4 style={{backgroundColor:"#2C3E50","color":"white"}}>📄 Google Doc</h4>
             <GoogleDocPreview docId={content.googleDoc} />
           </div>
         </div>

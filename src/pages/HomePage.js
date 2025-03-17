@@ -106,6 +106,11 @@ const HomePage = () => {
             </div>
           </div>
 
+          <div className="video-header">
+            <h3>🎥Tutorials</h3>
+            <span className="video-count-badge">Total: {filteredVideos.length}</span>
+          </div>
+             
           <div className="row video-list">
             {filteredVideos.slice(0, visibleCount).map((video, index) => (
               <div key={index} className="col-lg-4 col-md-6 col-sm-12 mb-4">

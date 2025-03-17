@@ -526,27 +526,28 @@
 }
 
 /* Video Count */
+
+.video-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
 .video-header {
   position: sticky;
   top: 60px;
   z-index: 1000;
   background: linear-gradient(to right, #2c3e50, #34495e);
   color: white;
-  padding: 6px 15px; /* Reduced padding for a slimmer look */
+  padding: 6px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 6px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-  font-size: 1.1rem; /* Adjusted font size */
+  font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 12px;
-}
-
-.video-header h3 {
-  margin: 0;
-  font-size: 1.3rem;
-  font-weight: 600;
 }
 
 .video-count-badge {
@@ -558,4 +559,3 @@
   color: white;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
 }
-

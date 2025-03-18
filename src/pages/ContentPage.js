@@ -50,15 +50,16 @@ const ContentPage = () => {
 
   return (
     <div className="content-page">
-      {/* Beautiful Header */}
+      {/* Beautiful Header 
       <header className="content-header">
         <h3>{content.title}</h3>
-      </header>
+      </header>*/}
 
       <div className="container">
         <div className="row">
           {/* Left Side: Content Section */}
           <div className="col-md-9 content-section">
+          <h3>{content.title}</h3>
           <p>🔥{content.description}</p>
             {/* Google Doc Section */}
             <div className="google-doc mb-4">

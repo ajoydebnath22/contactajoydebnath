@@ -536,7 +536,7 @@
 .video-header {
   position: sticky;
   top: 60px;
-  z-index: 1000;
+  z-index: 997;
   background: linear-gradient(to right, #2C3E50, #4CA1AF);
   color: white;
   padding: 6px 15px;

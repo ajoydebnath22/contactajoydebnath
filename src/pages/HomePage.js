@@ -99,7 +99,7 @@ const HomePage = () => {
               <div className="latest-video-info">
                 <h4>{filteredVideos[0].title}</h4>
                 <p>{filteredVideos[0].description}</p>
-                <a href={filteredVideos[0].video} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href={filteredVideos[0].video} target="_blank" rel="noopener noreferrer" className="watch-now-btn">
                   Watch Now
                 </a>
               </div>
@@ -108,7 +108,7 @@ const HomePage = () => {
 
           <div className="video-header">
             <h3>🎥Tutorials</h3>
-            <span className="video-count-badge">Total: {filteredVideos.length}</span>
+            <span className="video-count-badge">✨ {filteredVideos.length}</span>
           </div>
              
           <div className="row video-list">

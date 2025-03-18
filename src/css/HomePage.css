@@ -5,7 +5,7 @@
 /* Latest Video Section */
 .latest-video-section h3 {
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .latest-video-card {
@@ -558,4 +558,28 @@
   font-weight: 500;
   color: white;
   /*box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);*/
+}
+
+/* Watch Now Button Design */
+.watch-now-btn {
+  background: linear-gradient(to right, #2C3E50, #4CA1AF); /* Elegant Gradient */
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px; /* Rounded edges for a premium look */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.watch-now-btn:hover {
+  background: linear-gradient(to right, #4CA1AF, #2C3E50); /* Reverse gradient for interaction */
+  transform: translateY(-3px); /* Subtle lift effect */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }

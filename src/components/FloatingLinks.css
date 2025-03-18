@@ -9,7 +9,7 @@
   }
   
   .floating-button {
-    background: #2C3E50;
+    background: linear-gradient(to right, #2C3E50, #4CA1AF);
     color: white;
     font-size: 22px;
     width: 35px;

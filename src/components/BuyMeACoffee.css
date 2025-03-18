@@ -3,7 +3,7 @@
   position: fixed;
   top: 30vh;
   right: 2vw;
-  background: #2C3E50;
+  background: linear-gradient(to right, #2C3E50, #4CA1AF);
   color: white;
   border: none;
   width: 35px;

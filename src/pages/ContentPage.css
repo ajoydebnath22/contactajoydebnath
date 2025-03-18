@@ -158,3 +158,44 @@
   font-weight: 500;
   color: #333;
 }
+
+
+/*Content Header */
+.content-header {
+  position: sticky;
+  top:0px;
+  z-index: 997;     /* Keeps it above all other content */
+  width: 100%;
+  background: linear-gradient(to right, #2C3E50, #4CA1AF);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.content-header h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .content-header {
+    padding: 6px;
+    margin-left: 3vw;
+    margin-top:-1vh;
+  }
+  .content-header h3 {
+    font-size: 1.3rem;
+    max-width: 97%;
+  }
+
+}

@@ -49,41 +49,45 @@ const ContentPage = () => {
   }
 
   return (
-    <div className="content-page">
-      {/* Beautiful Header 
-      <header className="content-header">
-        <h3>{content.title}</h3>
-      </header>*/}
-
-      <div className="container">
-        <div className="row">
-          {/* Left Side: Content Section */}
-          <div className="col-md-9 content-section">
-          <h3>{content.title}</h3>
+    <div className="content container">
+      <div className="row">
+        {/* Left Side: Content Section */}
+        <div className="col-md-9 content-section">
+          <h2>📌{content.title}</h2>
           <p>🔥{content.description}</p>
-            {/* Google Doc Section */}
-            <div className="google-doc mb-4">
-              <h4>📄 Google Doc</h4>
-              <GoogleDocPreview docId={content.googleDoc} />
-            </div>
-          </div>
 
-          {/* Right Side: Video Section */}
-          <div className="col-md-3 video-section">
-            <h4 className="video-title">🎥 Watch Tutorial</h4>
-            <div className="video-list">
-              {content.videos.map((video, index) => (
-                <a key={index} href={video} target="_blank" rel="noopener noreferrer" className="video-item">
-                  <img src={getYouTubeThumbnail(video)} alt={`Video ${index + 1}`} className="video-thumbnail img-fluid rounded shadow" />
-                </a>
-              ))}
-            </div>
+          {/* Google Doc Section */}
+          <div className="google-doc mb-4">
+            <h4 style={{backgroundColor:"#2C3E50","color":"white"}}>📄Document</h4>
+            <GoogleDocPreview docId={content.googleDoc} />
+          </div>
+        </div>
+
+        {/* Right Side: Video Section */}
+        <div className="col-md-3 video-section">
+          <h4 className="video-title">🎥 Watch Tutorial</h4>
+          <div className="video-list">
+            {content.videos.map((video, index) => (
+              <a
+                key={index}
+                href={video}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="video-item"
+              >
+                <img
+                  src={getYouTubeThumbnail(video)}
+                  alt={`Video ${index + 1}`}
+                  className="video-thumbnail img-fluid rounded shadow"
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>
-      <ScrollToTop />
+      <ScrollToTop/>
       <BuyMeACoffee />
-      <FloatingLinks />
+      <FloatingLinks/>
     </div>
   );
 };

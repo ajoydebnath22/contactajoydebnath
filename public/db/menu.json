@@ -1,24 +1,72 @@
 [
-    {
-      "name": "Home",
-      "link": "/",
-      "icon": "FaHome",
-      "submenus": []
-    },
-    {
-      "name": "SQL",
-      "link": "",
-      "icon": "FaFolder",
-      "submenus": [
-        { "name": "SQL: Structured Query Language", "link": "/categories/sql" },
-        { "name": "DDL: Data Definition Language", "link": "/categories/ddl" }
-      ]
-    },
-    {
-      "name": "About",
-      "link": "/about",
-      "icon": "FaUser",
-      "submenus": []
-    }
-  ]
-  
+  {
+    "name": "Home",
+    "link": "/",
+    "icon": "FaHome",
+    "submenus": []
+  },
+  {
+    "name": "SQL",
+    "link": "",
+    "icon": "FaFolder",
+    "submenus": [
+      { "name": "SQL: Structured Query Language", "link": "/categories/sql" },
+      { "name": "DDL: Data Definition Language", "link": "/categories/ddl" }
+    ]
+  },
+  {
+    "name": "Java",
+    "link": "",
+    "icon": "FaFolder",
+    "submenus": [
+      { "name": "First Java Program - Hello World", "link": "https://youtu.be/7F1TdO4KeiM" },
+      { "name": "Environment Setup & Path Variable", "link": "https://youtu.be/p6MLxaCKr80" },
+      { "name": "Class, Object, Method, Constructors", "link": "https://youtu.be/vFpK067HbCs" },
+      { "name": "Abstraction, Abstract Class", "link": "https://youtu.be/vgKCmdgcI_0" },
+      { "name": "Abstraction, Interface", "link": "https://youtu.be/E86QsfsNTIY" },
+      { "name": "Inheritance & Multiple Inheritance Issue", "link": "https://youtu.be/y6HgMh-I45M" },
+      { "name": "Polymorphism: Overloading & Overriding", "link": "https://youtu.be/mCMqkKGrb7s" },
+      { "name": "Encapsulation, Data Hiding & JavaBean", "link": "https://youtu.be/ZH4GwBWXpPQ" },
+      { "name": "Access Modifiers (Private, Public, Protected)", "link": "https://youtu.be/Fkkcc6ypCtw" },
+      { "name": "Static Keyword Explained", "link": "https://youtu.be/tgzUgat88_A" },
+      { "name": "Final Keyword", "link": "https://youtu.be/GaprusN0uNE" },
+      { "name": "'this' Keyword", "link": "https://youtu.be/x_TJINrbqtk" },
+      { "name": "'super' Keyword", "link": "https://youtu.be/Jj1E2M6e-O0" },
+      { "name": "Collection Framework", "link": "https://youtu.be/DFzzcqt7Gvk" },
+      { "name": "ArrayList & ListIterator", "link": "https://youtu.be/O3QrQHQyiLQ" },
+      { "name": "LinkedList & Methods", "link": "https://youtu.be/jw_KoDctxtg" },
+      { "name": "HashSet & Internal Working", "link": "https://youtu.be/7YPTXWkqzV8" },
+      { "name": "Singleton Design Pattern", "link": "https://youtu.be/UHtUOSvqVs4" },
+      { "name": "Lambda Expression & Functional Interfaces", "link": "https://youtu.be/o88ycNO3R7Q" },
+      { "name": "Stream API: Intermediate & Terminal Operations", "link": "https://youtu.be/nqu-cDQzzAA" }
+    ]
+  },
+  {
+    "name": "Spring Framework",
+    "link": "",
+    "icon": "FaFolder",
+    "submenus": [
+      { "name": "IOC, Dependency Injection, Coupling", "link": "https://youtu.be/oRBw1H2_C4k" },
+      { "name": "IOC Container, BeanFactory & Lazy Loading", "link": "https://youtu.be/ZHFmQ5P7dU0" },
+      { "name": "Bean Scope: Singleton & Prototype", "link": "https://youtu.be/sBNSi2FCaf4" },
+      { "name": "Autowiring Modes: byName, byType, constructor", "link": "https://youtu.be/0catrd8gf98" },
+      { "name": "@Configuration, @Bean, @ComponentScan", "link": "https://youtu.be/OXFVdoxX4SE" },
+      { "name": "Removing @Configuration Annotation", "link": "https://youtu.be/lmQ0sy74QkA" },
+      { "name": "Spring JDBCTemplate, JDBC & PreparedStatement", "link": "https://youtu.be/jkc3RzTxzXE" },
+      { "name": "JDBCTemplate, RowMapper & ResultSetExtractor", "link": "https://youtu.be/NsytsxHTUro" },
+      { "name": "MVC & Spring MVC Overview", "link": "https://youtu.be/ZPVvmX_yntA" },
+      { "name": "Spring MVC with JSP (Part 1)", "link": "https://youtu.be/bmHuIsqGqB0" },
+      { "name": "Spring MVC with JSP (Part 2)", "link": "https://youtu.be/yMX1wRM8wco" },
+      { "name": "Spring MVC Form Handling & @RequestParam", "link": "https://youtu.be/F40zq_lCas0" },
+      { "name": "Creating First Model in Spring MVC", "link": "https://youtu.be/zQ19yIbSGzM" },
+      { "name": "Data Binding in Spring MVC", "link": "https://youtu.be/TG7DDnV9FmM" },
+      { "name": "Two-Way Data Binding in Spring MVC", "link": "https://youtu.be/N37iNUwzfLw" }
+    ]
+  },
+  {
+    "name": "About",
+    "link": "/about",
+    "icon": "FaUser",
+    "submenus": []
+  }
+]

@@ -25,7 +25,7 @@
       "description": "Learn how to write your first Java program and print 'Hello World'.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/7F1TdO4KeiM"],
-      "googleDoc": "",
+      "googleDoc": "12FO8JQqDpCMtEEooj_gSIa3Rtj5hd079X45ENy0F9OY",
       "theory": "A Java program starts execution from the `main` method. The `System.out.println` statement is used to print text on the console."
     },
     "java-environment-setup": {
@@ -33,7 +33,7 @@
       "description": "Learn how to set up the Java environment and why setting the path variable is important.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/p6MLxaCKr80"],
-      "googleDoc": "",
+      "googleDoc": "12FO8JQqDpCMtEEooj_gSIa3Rtj5hd079X45ENy0F9OY",
       "theory": "To compile and run Java programs, we need to install JDK and configure the environment variable."
     },
     "java-class-object": {
@@ -41,7 +41,7 @@
       "description": "Understanding the core concepts of Object-Oriented Programming in Java.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/vFpK067HbCs"],
-      "googleDoc": "",
+      "googleDoc": "1PFeREC64giTSEejMhpjHYMAw1nXaxOOhHVKbsxKrN-w",
       "theory": "A class is a blueprint for objects, and objects are instances of classes."
     },
     "java-abstraction": {
@@ -49,7 +49,7 @@
       "description": "Learn about abstraction and how abstract classes work in Java.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/vgKCmdgcI_0"],
-      "googleDoc": "",
+      "googleDoc": "14nHnl-kAuYrisbjwbfDcyqD5349td6gbJwn-4JOktpY",
       "theory": "Abstraction hides implementation details and only exposes the necessary functionality."
     },
     "java-interface": {
@@ -57,7 +57,7 @@
       "description": "Understanding interfaces in Java and their role in abstraction.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/E86QsfsNTIY"],
-      "googleDoc": "",
+      "googleDoc": "14nHnl-kAuYrisbjwbfDcyqD5349td6gbJwn-4JOktpY",
       "theory": "An interface defines a contract that classes must implement."
     },
     "java-inheritance": {
@@ -65,7 +65,7 @@
       "description": "Exploring inheritance and why multiple inheritance is not allowed in Java.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/y6HgMh-I45M"],
-      "googleDoc": "",
+      "googleDoc": "1NyFyyt3a6jQGONeqP4SgI9ZIZt9gsqpQrYo06WIKNyM",
       "theory": "Inheritance allows a class to acquire properties and behaviors from another class."
     },
     "java-polymorphism": {
@@ -73,7 +73,7 @@
       "description": "Understanding method overloading and method overriding in Java.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/mCMqkKGrb7s"],
-      "googleDoc": "",
+      "googleDoc": "16CTBB7uPMQFYLsOfqYNc6l31S7DQFzoT3QGkGUhvnd4",
       "theory": "Polymorphism allows methods to have different behaviors based on the context."
     },
     "java-encapsulation": {
@@ -81,7 +81,7 @@
       "description": "Learn about encapsulation, data hiding, and JavaBean class.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/ZH4GwBWXpPQ"],
-      "googleDoc": "",
+      "googleDoc": "1GeDW79i8z9o531fRhuoK0CnVBx5Oqm-umpkEfYMJpMY",
       "theory": "Encapsulation protects data by restricting direct access to variables."
     },
     "java-access-modifiers": {
@@ -89,7 +89,7 @@
       "description": "Exploring private, public, default, and protected access modifiers in Java.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/Fkkcc6ypCtw"],
-      "googleDoc": "",
+      "googleDoc": "1cCwbaznqUOdFIiYKtGihk8V0VBuIgljnvbYqu9Goeec",
       "theory": "Access modifiers control the visibility of classes, methods, and variables."
     },
     "java-static-keyword": {
@@ -97,7 +97,7 @@
       "description": "Understanding static variables, methods, blocks, and nested classes.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/tgzUgat88_A"],
-      "googleDoc": "",
+      "googleDoc": "1JXoCSSz0IdsUCaA96G0Gfimhj17UiJcqGYGfYsOoibE",
       "theory": "Static members belong to the class rather than instances of the class."
     },
     "java-final-keyword": {
@@ -105,7 +105,7 @@
       "description": "Learn how to use the final keyword with variables, methods, and classes.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/GaprusN0uNE"],
-      "googleDoc": "",
+      "googleDoc": "1lpZBQ1S8uT7Pci4gSL4PfbAi17buFgm5DJGbDvyL69M",
       "theory": "The `final` keyword prevents modification of variables, methods, and inheritance."
     },
     "java-this-keyword": {
@@ -113,7 +113,7 @@
       "description": "Understanding the `this` keyword and its applications in Java.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/x_TJINrbqtk"],
-      "googleDoc": "",
+      "googleDoc": "1XN9m33Uelc6nn6R4eP168TKazEljOzH-bEthHOsabGc",
       "theory": "The `this` keyword refers to the current instance of a class."
     },
     "java-super-keyword": {
@@ -121,15 +121,23 @@
       "description": "Exploring the `super` keyword in Java and its role in inheritance.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/Jj1E2M6e-O0"],
-      "googleDoc": "",
+      "googleDoc": "1XN9m33Uelc6nn6R4eP168TKazEljOzH-bEthHOsabGc",
       "theory": "The `super` keyword is used to refer to the parent class's constructor or methods."
+    },
+    "String-StringPool-Intern-Method": {
+      "title": "String, String Pool, Intern Method",
+      "description": "Exploring the String, String Pool, Intern method in Java",
+      "image": "/images/java.jpg",
+      "videos": ["https://youtu.be/vw8mOroR-cg"],
+      "googleDoc": "1LYwsMTjhDPtkoj6YsM2P0UP1unaLkP-Ipj7UPKSldn4",
+      "theory": "String, String Pool, Intern Method"
     },
     "java-collection-framework": {
       "title": "Collection Framework",
       "description": "An introduction to Java's Collection Framework and its various implementations.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/DFzzcqt7Gvk"],
-      "googleDoc": "",
+      "googleDoc": "1_NPaRlNrT6hB776I_XK3JDG4i-4ace038iYB60Jlwco",
       "theory": "The Collection Framework provides reusable data structures and algorithms."
     },
     "java-arraylist": {
@@ -137,7 +145,7 @@
       "description": "Understanding ArrayList, its methods, and ListIterator in Java.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/O3QrQHQyiLQ"],
-      "googleDoc": "",
+      "googleDoc": "15C7enJRHU40ffTl1ZjWJ2UeQWoeHyA-PHa-cICeo_6E",
       "theory": "ArrayList is a dynamic array implementation in Java."
     },
     "java-linkedlist": {
@@ -145,7 +153,7 @@
       "description": "Exploring LinkedList, its methods, and internal working.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/jw_KoDctxtg"],
-      "googleDoc": "",
+      "googleDoc": "1OeARDCCzHnj4km8z6rHOJamw0lxLym3ElixAA_sT_74",
       "theory": "LinkedList is a doubly-linked list implementation in Java."
     },
     "java-hashset": {
@@ -153,7 +161,7 @@
       "description": "Understanding HashSet and how it works internally in Java.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/7YPTXWkqzV8", "https://youtu.be/nQOLOBlgw-w"],
-      "googleDoc": "",
+      "googleDoc": "1SBrXs1P6empuOLcHWtDw-j4pmgeZgbm3ugvBplH1Jok",
       "theory": "HashSet stores unique elements and does not maintain insertion order."
     },
     "java-singleton-pattern": {
@@ -161,7 +169,7 @@
       "description": "Learn about Singleton Design Pattern in Java with early and lazy instantiation.",
       "image": "/images/java.jpg",
       "videos": ["https://youtu.be/UHtUOSvqVs4", "https://youtu.be/gplmcZV7gp4"],
-      "googleDoc": "",
+      "googleDoc": "1O2qQD5huUzhP4DKIqPEAPmQwLeCqxjXYWLJqThdY_Bc",
       "theory": "Singleton ensures that only one instance of a class exists at a time."
     },
   "java-singleton-pattern": {
@@ -169,7 +177,7 @@
     "description": "Learn about Singleton Design Pattern in Java with early and lazy instantiation.",
     "image": "/images/java.jpg",
     "videos": ["https://youtu.be/UHtUOSvqVs4", "https://youtu.be/gplmcZV7gp4"],
-    "googleDoc": "",
+    "googleDoc": "1O2qQD5huUzhP4DKIqPEAPmQwLeCqxjXYWLJqThdY_Bc",
     "theory": "Singleton ensures that only one instance of a class exists at a time."
   },
   "java-lambda-expression": {
@@ -177,7 +185,7 @@
     "description": "Learn about lambda expressions, functional interfaces, and anonymous classes in Java.",
     "image": "/images/java.jpg",
     "videos": ["https://youtu.be/o88ycNO3R7Q"],
-    "googleDoc": "",
+    "googleDoc": "1GXkJ7jaGJkQPRSdD3WxbJ0eKL84fjgldHQrkIUN79kw",
     "theory": "Lambda expressions provide a concise way to implement functional interfaces."
   },
   "java-exception-hierarchy": {
@@ -185,7 +193,7 @@
     "description": "Understanding Java's exception hierarchy, call stack, and exception propagation.",
     "image": "/images/java.jpg",
     "videos": ["https://youtu.be/D4cigYGNtu8"],
-    "googleDoc": "",
+    "googleDoc": "1V7HmI1F4NHREkW2bf-Gja336-OmSHUfpxKt5SJxIFJc",
     "theory": "Exceptions in Java follow a hierarchical structure and propagate through the call stack."
   },
   "java-exception-handling": {
@@ -193,7 +201,7 @@
     "description": "Learn how to handle exceptions using try, catch, and finally blocks in Java.",
     "image": "/images/java.jpg",
     "videos": ["https://youtu.be/8l-fXr_nYe4"],
-    "googleDoc": "",
+    "googleDoc": "1HvaNT9s-jX08RChFMIfTnhRj7dSr2iXTLpbNlY1lSH8",
     "theory": "Try-catch blocks help in handling runtime errors and preventing program crashes."
   },
   "java-custom-exception": {
@@ -201,7 +209,7 @@
     "description": "Learn how to create custom exceptions and use throw/throws keywords in Java.",
     "image": "/images/java.jpg",
     "videos": ["https://youtu.be/0cSas4k7CUQ"],
-    "googleDoc": "",
+    "googleDoc": "1MtyytzKVnpCJxxocsUEbpiZI0m1Na3eywY6pl-Ac140/",
     "theory": "Custom exceptions provide meaningful error handling for specific scenarios."
   },
   "java-object-cloning": {
@@ -209,7 +217,7 @@
     "description": "Understanding object cloning, shallow copy, and deep copy in Java.",
     "image": "/images/java.jpg",
     "videos": ["https://youtu.be/YppKcqWoaZA"],
-    "googleDoc": "",
+    "googleDoc": "1vSUAZ7xmoMJM5bGLxWpJtwGP2xq2cFMzC1jPQqGLpqk",
     "theory": "Cloning allows creating duplicate objects with the same or different memory references."
   },
   "java-immutable-class": {
@@ -217,7 +225,7 @@
     "description": "Learn how to create immutable classes in Java using Immutable Design Pattern.",
     "image": "/images/java.jpg",
     "videos": ["https://youtu.be/NJE2wrvsdaY"],
-    "googleDoc": "",
+    "googleDoc": "1m9kJ5aOkgN_3P5FmgvSGCNoy6VTdw2PbGrcB3995zqE",
     "theory": "Immutable objects do not change their state once created."
   },
   "java-factory-method-pattern": {
@@ -225,7 +233,7 @@
     "description": "Learn about the Factory Method Design Pattern in Java.",
     "image": "/images/java.jpg",
     "videos": ["https://youtu.be/A5JgNaFMiUY"],
-    "googleDoc": "",
+    "googleDoc": "1THk7M9-ZkJqwRTA-WlTHzIz1y9RDMzsM_TXKOyx_Fuo",
     "theory": "The Factory Method Pattern provides an interface for creating objects without specifying their exact class."
   },
   "java-stream-api": {
@@ -233,7 +241,7 @@
     "description": "Learn about Java Stream API and its intermediate & terminal operations.",
     "image": "/images/java.jpg",
     "videos": ["https://youtu.be/nqu-cDQzzAA", "https://youtu.be/HVGUhOBGrk8"],
-    "googleDoc": "",
+    "googleDoc": "10I1Ea9juUHcBz8URDlWQkIqTM_9BuY4ys6zKTdhyEoU",
     "theory": "Stream API allows functional-style operations on collections with lazy evaluation."
   },
   "java-optional-class": {
@@ -241,7 +249,7 @@
     "description": "Learn about Optional class and how to handle null values effectively in Java 8.",
     "image": "/images/java.jpg",
     "videos": ["https://youtu.be/53wicqO5oeo", "https://youtu.be/bf9C7vBz0bI"],
-    "googleDoc": "",
+    "googleDoc": "1qfuQHgmV-e3kY9wTDGdSkPPhMcm78nxK3rExRhexLdI",
     "theory": "Optional helps to avoid NullPointerException by wrapping potential null values."
   },
   "java-sorting-comparable-comparator": {
@@ -249,7 +257,7 @@
     "description": "Understanding how sorting works in Java using Comparable and Comparator interfaces.",
     "image": "/images/java.jpg",
     "videos": ["https://youtu.be/2uP0mnkJxY8"],
-    "googleDoc": "",
+    "googleDoc": "1tpbQi695exDOxuKQz6ZcPVMXgkuayATE_79EYTDO8NU",
     "theory": "Comparable provides natural ordering, whereas Comparator allows custom sorting logic."
   },
   "java-equals-vs-equality-operator": {
@@ -257,7 +265,7 @@
     "description": "Understanding the difference between equals() method and == operator in Java.",
     "image": "/images/java.jpg",
     "videos": ["https://youtu.be/jLe_zoyf8HI"],
-    "googleDoc": "",
+    "googleDoc": "18FZGIrAkkPb4oG0PAz4KlFQb12z2bJbDqam1fs5OGVo",
     "theory": "The `==` operator compares memory references, while `equals()` checks object content."
   },
   "java-scanner-class": {
@@ -265,7 +273,7 @@
     "description": "Learn how to use Java Scanner Class to take user input in Java.",
     "image": "/images/java.jpg",
     "videos": ["https://youtu.be/fxdKvG47P8Q"],
-    "googleDoc": "",
+    "googleDoc": "1TqNpntG5yiS8q-sMgsANS9G_xO04lkrm4Maw93yt9Ks",
     "theory": "Scanner is a utility class that allows reading input from various sources like keyboard and files."
   },
   "spring-ioc": {
@@ -273,7 +281,7 @@
     "description": "Learn about Inversion of Control (IOC), Dependency Injection, and how it reduces coupling in Spring.",
     "image": "/images/spring.jpg",
     "videos": ["https://youtu.be/oRBw1H2_C4k"],
-    "googleDoc": "",
+    "googleDoc": "1Og0goRhqQOeHkkA_BNCJ4MGj7DBZA7YBbEHX-D28CYY",
     "theory": "IOC is a design principle in which the control of object creation and dependency management is given to a container."
   },
   "spring-ioc-container": {
@@ -281,7 +289,7 @@
     "description": "Understanding IOC Container, BeanFactory, and important APIs in Spring.",
     "image": "/images/spring.jpg",
     "videos": ["https://youtu.be/ZHFmQ5P7dU0"],
-    "googleDoc": "",
+    "googleDoc": "1TYouFQ17cll1TTz8YU5C-W8drVdPRosVhJq0fKpx6Yc",
     "theory": "Spring provides IOC containers like BeanFactory and ApplicationContext to manage bean lifecycles."
   },
   "spring-bean-scope": {
@@ -289,7 +297,7 @@
     "description": "Learn about different bean scopes in Spring, including Singleton and Prototype.",
     "image": "/images/spring.jpg",
     "videos": ["https://youtu.be/sBNSi2FCaf4"],
-    "googleDoc": "",
+    "googleDoc": "1ZETCeYVggm6YxmT7yzYVT2AOciEe5VIthxqYnvxD5WQ",
     "theory": "Bean scope defines the lifecycle and visibility of beans within the Spring container."
   },
   "spring-autowiring": {
@@ -297,7 +305,7 @@
     "description": "Understanding Autowiring in Spring and its different modes: byName, byType, and constructor.",
     "image": "/images/spring.jpg",
     "videos": ["https://youtu.be/0catrd8gf98"],
-    "googleDoc": "",
+    "googleDoc": "14HMUlBWEc97yS-3ZQd_k72xu-FpXJQSkWhjkU8bC0bE",
     "theory": "Spring Autowiring allows automatic dependency injection to reduce XML configuration."
   },
   "spring-configuration": {
@@ -305,7 +313,7 @@
     "description": "Learn how @Configuration and @Bean annotations work in Spring.",
     "image": "/images/spring.jpg",
     "videos": ["https://youtu.be/OXFVdoxX4SE", "https://youtu.be/lmQ0sy74QkA"],
-    "googleDoc": "",
+    "googleDoc": "1VJD_KNIPjrHop1zlREl33WujEax6b8B1OcY5X5yZzrQ",
     "theory": "The @Configuration annotation marks a class as a source of bean definitions, while @Bean defines individual beans."
   },
   "spring-jdbc": {
@@ -313,7 +321,7 @@
     "description": "Understanding JDBC Template and PreparedStatement in Spring.",
     "image": "/images/spring.jpg",
     "videos": ["https://youtu.be/jkc3RzTxzXE"],
-    "googleDoc": "",
+    "googleDoc": "1wFGVdwfAMjp8jcldm3tJwWbGlwIXBd35mBOihQrK1J4",
     "theory": "Spring provides JDBC Template to simplify database interactions using PreparedStatement."
   },
   "spring-jdbctemplate": {
@@ -321,7 +329,7 @@
     "description": "Learn about JDBC Template, RowMapper, and ResultSetExtractor in Spring.",
     "image": "/images/spring.jpg",
     "videos": ["https://youtu.be/NsytsxHTUro"],
-    "googleDoc": "",
+    "googleDoc": "1wFGVdwfAMjp8jcldm3tJwWbGlwIXBd35mBOihQrK1J4",
     "theory": "JDBC Template simplifies database operations, and RowMapper helps map query results to objects."
   },
   "spring-mvc": {
@@ -329,7 +337,7 @@
     "description": "Understanding the basics of Model-View-Controller (MVC) in Spring.",
     "image": "/images/spring.jpg",
     "videos": ["https://youtu.be/ZPVvmX_yntA"],
-    "googleDoc": "",
+    "googleDoc": "16Y9BpBOi__4fYHU7rUFO2PlPbU-zMgBP06YkeXKZ3As",
     "theory": "Spring MVC is a web framework that follows the MVC design pattern to separate concerns."
   },
   "spring-mvc-jsp": {
@@ -337,7 +345,7 @@
     "description": "Learn how to integrate JSP (Java Server Pages) with Spring MVC.",
     "image": "/images/spring.jpg",
     "videos": ["https://youtu.be/bmHuIsqGqB0", "https://youtu.be/yMX1wRM8wco"],
-    "googleDoc": "",
+    "googleDoc": "1GY0A18xdphq3JfToue23lPkRKvuXsLBGcvJpN9Ja2yk",
     "theory": "Spring MVC supports JSP as a view technology, allowing dynamic web page rendering."
   },
   "spring-mvc-form": {
@@ -345,7 +353,7 @@
     "description": "Learn how to handle forms in Spring MVC using @RequestParam and ModelAttribute.",
     "image": "/images/spring.jpg",
     "videos": ["https://youtu.be/F40zq_lCas0"],
-    "googleDoc": "",
+    "googleDoc": "1XUB3Xvy041On3Apa7Sgs3r_9HMTOc3ZkI84qzyqM78A",
     "theory": "Spring MVC provides features to handle form submissions and bind form data to model objects."
   },
   "spring-mvc-data-binding": {
@@ -353,7 +361,7 @@
     "description": "Understanding data binding in Spring MVC with examples.",
     "image": "/images/spring.jpg",
     "videos": ["https://youtu.be/TG7DDnV9FmM", "https://youtu.be/N37iNUwzfLw"],
-    "googleDoc": "",
+    "googleDoc": "1d94q2HLuEftvVNvX2PitlKqEPLum8QE_Uu9q",
     "theory": "Data binding in Spring MVC allows automatic conversion of form input into Java objects."
   }
   

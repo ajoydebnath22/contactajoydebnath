@@ -12,10 +12,10 @@ const icons = {
 const SideMenu = ({ isMobile, isMenuOpen, setIsMenuOpen }) => {
   const [menuItems, setMenuItems] = useState([]);
   const [expandedMenu, setExpandedMenu] = useState(null);
-  const [searchTerm, setSearchTerm] = useState(""); // Track search input
-  const [noResults, setNoResults] = useState(false); // Track if no results found
+  const [searchTerm, setSearchTerm] = useState("");
+  const [noResults, setNoResults] = useState(false);
+  const [fadeOut, setFadeOut] = useState(false);
 
-  // Fetch menu data
   useEffect(() => {
     fetch("/db/menu.json")
       .then((response) => response.json())
@@ -40,11 +40,12 @@ const SideMenu = ({ isMobile, isMenuOpen, setIsMenuOpen }) => {
   useEffect(() => {
     if (searchTerm && filteredMenu.length === 0) {
       setNoResults(true);
-      const timeout = setTimeout(() => {
-        setSearchTerm(""); // Clear search input after 3 seconds
+      setTimeout(() => setFadeOut(true), 2000);
+      setTimeout(() => {
+        setSearchTerm("");
         setNoResults(false);
+        setFadeOut(false);
       }, 3000);
-      return () => clearTimeout(timeout);
     }
   }, [searchTerm, filteredMenu]);
 
@@ -63,20 +64,20 @@ const SideMenu = ({ isMobile, isMenuOpen, setIsMenuOpen }) => {
           transform: isMobile
             ? `translateX(${isMenuOpen ? "0" : "-100%"})`
             : `translateX(${isMenuOpen ? "0" : "-250px"})`,
-          transition: "transform 0.3s ease-in-out", // Smooth transition
+          transition: "transform 0.3s ease-in-out",
         }}
       >
-        {/* Search Bar */}
-        <div className="input-group mb-3">
+        {/* Search Bar (Prevents Closing on Click) */}
+        <div className="input-group mb-3" onClick={(e) => e.stopPropagation()}>
           <span className="input-group-text">
             <FaSearch />
           </span>
           <input
             type="text"
-            className="form-control"
+            className={`form-control ${fadeOut ? "fade-out" : "fade-in"}`}
             placeholder="Search..."
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)} // Update search term
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
 
@@ -89,12 +90,13 @@ const SideMenu = ({ isMobile, isMenuOpen, setIsMenuOpen }) => {
                   className="d-flex justify-content-between align-items-center"
                   onClick={() => toggleSubmenu(item.name)}
                 >
-                  <div>
+                  <div className="menu-item-truncate">
                     {icons[item.icon]}
                     <Link
                       to={item.link}
                       className="text-white text-decoration-none ms-2"
                       onClick={() => isMobile && setIsMenuOpen(false)}
+                      title={item.name} // Tooltip for full name on hover
                     >
                       {item.name}
                     </Link>
@@ -115,8 +117,9 @@ const SideMenu = ({ isMobile, isMenuOpen, setIsMenuOpen }) => {
                         <li key={submenu.name} className="list-group-item bg-secondary">
                           <Link
                             to={submenu.link}
-                            className="text-white text-decoration-none"
+                            className="text-white text-decoration-none menu-item-truncate"
                             onClick={() => isMobile && setIsMenuOpen(false)}
+                            title={submenu.name}
                           >
                             {submenu.name}
                           </Link>
@@ -128,7 +131,7 @@ const SideMenu = ({ isMobile, isMenuOpen, setIsMenuOpen }) => {
             ))
           ) : (
             noResults && (
-              <li className="list-group-item text-center fade-in No-Menu-Data-Found">
+              <li className="list-group-item text-center text-white fade-in">
                 No menu found
               </li>
             )

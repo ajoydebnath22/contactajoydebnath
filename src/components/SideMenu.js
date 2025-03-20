@@ -131,7 +131,7 @@ const SideMenu = ({ isMobile, isMenuOpen, setIsMenuOpen }) => {
             ))
           ) : (
             noResults && (
-              <li className="list-group-item text-center text-white fade-in">
+              <li className="list-group-item text-center fade-in">
                 No menu found
               </li>
             )

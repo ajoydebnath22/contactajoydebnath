@@ -67,6 +67,8 @@ const HomePage = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [loadingMore, visibleCount, filteredVideos.length]);
 
+  const latestVideo = videos.find(video => video.isLatest === true);
+
   return (
     <div className="container mt-1">
       <div className="search-container">
@@ -86,25 +88,27 @@ const HomePage = () => {
         </div>
       ) : filteredVideos.length > 0 ? (
         <>
-          <div className="latest-video-section mb-4 mt-3">
-            <h3>🔥 Latest Video</h3>
-            <div className="latest-video-card">
-              <a href={filteredVideos[0].video} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={getYouTubeThumbnail(filteredVideos[0].video)}
-                  alt={filteredVideos[0].title}
-                  className="latest-video-thumbnail"
-                />
-              </a>
-              <div className="latest-video-info">
-                <h4>{filteredVideos[0].title}</h4>
-                <p>{filteredVideos[0].description}</p>
-                <a href={filteredVideos[0].video} target="_blank" rel="noopener noreferrer" className="watch-now-btn">
-                  Watch Now
+          {latestVideo && (
+            <div className="latest-video-section mb-4 mt-3">
+              <h3>🔥 Latest Video</h3>
+              <div className="latest-video-card">
+                <a href={latestVideo.video} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={getYouTubeThumbnail(latestVideo.video)}
+                    alt={latestVideo.title}
+                    className="latest-video-thumbnail"
+                  />
                 </a>
+                <div className="latest-video-info">
+                  <h4>{latestVideo.title}</h4>
+                  <p>{latestVideo.description}</p>
+                  <a href={latestVideo.video} target="_blank" rel="noopener noreferrer" className="watch-now-btn">
+                    Watch Now
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          )}
 
           <div className="video-header">
             <h3>🎥Tutorials</h3>

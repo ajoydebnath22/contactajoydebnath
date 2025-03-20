@@ -4,341 +4,415 @@
     "video": "https://youtu.be/7F1TdO4KeiM",
     "description": "Learn how to write and run your first Java program, including the classic 'Hello World' example.",
     "topic": "Java Basics",
-    "sequence": "1"
+    "sequence": "1",
+    "isLatest": false
   },
   {
     "title": "Environment Setup and why we need to set path in environment variable",
     "video": "https://youtu.be/p6MLxaCKr80",
     "description": "Step-by-step guide to setting up the Java environment and configuring the PATH variable.",
     "topic": "Java Setup",
-    "sequence": "2"
+    "sequence": "2",
+    "isLatest": false
   },
   {
     "title": "What is Class, Object, Method, Constructors",
     "video": "https://youtu.be/vFpK067HbCs",
     "description": "Understand the fundamental concepts of classes, objects, methods, and constructors in Java.",
     "topic": "OOP Concepts",
-    "sequence": "3"
+    "sequence": "3",
+    "isLatest": false
   },
   {
     "title": "Abstraction, Abstract Class",
     "video": "https://youtu.be/vgKCmdgcI_0",
     "description": "Explore the concept of abstraction and how to use abstract classes in Java.",
     "topic": "Abstraction",
-    "sequence": "4"
+    "sequence": "4",
+    "isLatest": false
   },
   {
     "title": "Abstraction, Interface",
     "video": "https://youtu.be/E86QsfsNTIY",
     "description": "Learn about interfaces in Java and their role in achieving abstraction.",
     "topic": "Abstraction",
-    "sequence": "5"
+    "sequence": "5",
+    "isLatest": false
   },
   {
     "title": "Inheritance, Is-A relationship, the problem with multiple inheritances",
     "video": "https://youtu.be/y6HgMh-I45M",
     "description": "Discover inheritance in Java, the IS-A relationship, and challenges with multiple inheritance.",
     "topic": "Inheritance",
-    "sequence": "6"
+    "sequence": "6",
+    "isLatest": false
   },
   {
     "title": "Polymorphism, Method and Constructors Overloading, Method Overriding",
     "video": "https://youtu.be/mCMqkKGrb7s",
     "description": "Dive into polymorphism, method overloading, constructor overloading, and method overriding.",
     "topic": "Polymorphism",
-    "sequence": "7"
+    "sequence": "7",
+    "isLatest": false
   },
   {
     "title": "Encapsulation, Data Hiding, Setter-Getter method, JavaBean Class",
     "video": "https://youtu.be/ZH4GwBWXpPQ",
     "description": "Understand encapsulation, data hiding, and implementing setter-getter methods in Java.",
     "topic": "Encapsulation",
-    "sequence": "8"
+    "sequence": "8",
+    "isLatest": false
   },
   {
     "title": "Access Modifier. Private, Public, Default, Protected",
     "video": "https://youtu.be/Fkkcc6ypCtw",
     "description": "Learn about access modifiers in Java: private, public, default, and protected.",
     "topic": "Access Modifiers",
-    "sequence": "9"
+    "sequence": "9",
+    "isLatest": false
   },
   {
     "title": "Static Keyword, Static variable, block, method, nested class",
     "video": "https://youtu.be/tgzUgat88_A",
     "description": "Explore the static keyword, including static variables, blocks, methods, and nested classes.",
     "topic": "Static Keyword",
-    "sequence": "10"
+    "sequence": "10",
+    "isLatest": false
   },
   {
     "title": "Final Keyword",
     "video": "https://youtu.be/GaprusN0uNE",
     "description": "Understand the final keyword and its usage in variables, methods, and classes.",
     "topic": "Final Keyword",
-    "sequence": "11"
+    "sequence": "11",
+    "isLatest": false
   },
   {
     "title": "'this' keyword",
     "video": "https://youtu.be/x_TJINrbqtk",
     "description": "Learn how to use the 'this' keyword to refer to current object instances in Java.",
     "topic": "Keywords",
-    "sequence": "12"
+    "sequence": "12",
+    "isLatest": false
   },
   {
     "title": "'super' keyword",
     "video": "https://youtu.be/Jj1E2M6e-O0",
     "description": "Discover the 'super' keyword for accessing superclass members and constructors.",
     "topic": "Keywords",
-    "sequence": "13"
+    "sequence": "13",
+    "isLatest": false
   },
   {
     "title": "Collection Framework",
     "video": "https://youtu.be/DFzzcqt7Gvk",
     "description": "Introduction to the Java Collection Framework and its core components.",
     "topic": "Collections Framework",
-    "sequence": "14"
+    "sequence": "14",
+    "isLatest": false
   },
   {
     "title": "ArrayList, ListIterator, How It Works Internally",
     "video": "https://youtu.be/O3QrQHQyiLQ",
     "description": "Detailed look at ArrayList, ListIterator, and its internal workings in Java.",
     "topic": "Collections Framework",
-    "sequence": "15"
+    "sequence": "15",
+    "isLatest": false
   },
   {
     "title": "LinkedList, Methods & How It Works Internally in Java",
     "video": "https://youtu.be/jw_KoDctxtg",
     "description": "Explore LinkedList, its methods, and internal implementation in Java.",
     "topic": "Collections Framework",
-    "sequence": "16"
+    "sequence": "16",
+    "isLatest": false
   },
   {
     "title": "HashSet & How It Works Internally in Java",
     "video": "https://youtu.be/7YPTXWkqzV8",
     "description": "Understand HashSet in Java and how it functions internally.",
     "topic": "Collections Framework",
-    "sequence": "17"
+    "sequence": "17",
+    "isLatest": false
   },
   {
     "title": "HashSet, Its Methods & How It Works Internally in Java",
     "video": "https://youtu.be/nQOLOBlgw-w",
     "description": "Deep dive into HashSet methods and their internal mechanisms.",
     "topic": "Collections Framework",
-    "sequence": "18"
+    "sequence": "18",
+    "isLatest": false
   },
   {
     "title": "Singleton Design Pattern in Java. Early & Lazy Instantiation",
     "video": "https://youtu.be/UHtUOSvqVs4",
     "description": "Learn the Singleton design pattern with early and lazy instantiation in Java.",
     "topic": "Design Patterns",
-    "sequence": "19"
+    "sequence": "19",
+    "isLatest": false
   },
   {
     "title": "Singleton Pattern. Lazy Instantiation for Multiple Threads.Part-2",
     "video": "https://youtu.be/gplmcZV7gp4",
     "description": "Implementing thread-safe lazy instantiation for the Singleton pattern.",
     "topic": "Design Patterns",
-    "sequence": "20"
+    "sequence": "20",
+    "isLatest": false
   },
   {
     "title": "Lambda Expression, Functional Interfaces, Anonymous Class",
     "video": "https://youtu.be/o88ycNO3R7Q",
     "description": "Introduction to lambda expressions, functional interfaces, and anonymous classes.",
     "topic": "Lambda & Functional Interfaces",
-    "sequence": "21"
+    "sequence": "21",
+    "isLatest": false
   },
   {
     "title": "Exception, Exception Hierarchy, Call Stack, Propagation",
     "video": "https://youtu.be/D4cigYGNtu8",
     "description": "Understanding exceptions, their hierarchy, and call stack propagation.",
     "topic": "Exception Handling",
-    "sequence": "22"
+    "sequence": "22",
+    "isLatest": false
   },
   {
     "title": "Exception, try, catch, finally",
     "video": "https://youtu.be/8l-fXr_nYe4",
     "description": "Handling exceptions using try, catch, and finally blocks in Java.",
     "topic": "Exception Handling",
-    "sequence": "23"
+    "sequence": "23",
+    "isLatest": false
   },
   {
     "title": "Exception, Custom Exception, throw, throws",
     "video": "https://youtu.be/0cSas4k7CUQ",
     "description": "Creating custom exceptions and using throw and throws keywords.",
     "topic": "Exception Handling",
-    "sequence": "24"
+    "sequence": "24",
+    "isLatest": false
   },
   {
     "title": "Object Cloning, Shallow Copy and Deep Copy.",
     "video": "https://youtu.be/YppKcqWoaZA",
     "description": "Exploring object cloning, shallow copy, and deep copy in Java.",
     "topic": "Object Cloning",
-    "sequence": "25"
+    "sequence": "25",
+    "isLatest": false
   },
   {
     "title": "How to create Immutable class in Java? Immutable Design Pattern.",
     "video": "https://youtu.be/NJE2wrvsdaY",
     "description": "How to create immutable classes and the Immutable design pattern.",
     "topic": "Design Patterns",
-    "sequence": "26"
+    "sequence": "26",
+    "isLatest": false
   },
   {
     "title": "Factory Method Design Pattern.",
     "video": "https://youtu.be/A5JgNaFMiUY",
     "description": "Implementing the Factory Method design pattern in Java.",
     "topic": "Design Patterns",
-    "sequence": "27"
+    "sequence": "27",
+    "isLatest": false
   },
   {
     "title": "Stream API: Intermediate & Terminal operations.",
     "video": "https://youtu.be/nqu-cDQzzAA",
     "description": "Guide to Java Stream API's intermediate and terminal operations.",
     "topic": "Stream API",
-    "sequence": "28"
+    "sequence": "28",
+    "isLatest": false
   },
   {
     "title": "Stream API : Intermediate & Terminal operations",
     "video": "https://youtu.be/HVGUhOBGrk8",
     "description": "Continued exploration of Stream API operations in Java.",
     "topic": "Stream API",
-    "sequence": "29"
+    "sequence": "29",
+    "isLatest": false
   },
   {
     "title": "Guide To Java 8 Optional Class. Part-I",
     "video": "https://youtu.be/53wicqO5oeo",
     "description": "Part I: Guide to using Java 8 Optional class for null safety.",
     "topic": "Optional Class",
-    "sequence": "30"
+    "sequence": "30",
+    "isLatest": false
   },
   {
     "title": "Guide To Java 8 Optional Class. Part-II",
     "video": "https://youtu.be/bf9C7vBz0bI",
     "description": "Part II: Advanced usage of Java 8 Optional class.",
     "topic": "Optional Class",
-    "sequence": "31"
+    "sequence": "31",
+    "isLatest": false
   },
   {
     "title": "Sorting with Comparable and Comparator in Java.",
     "video": "https://youtu.be/2uP0mnkJxY8",
     "description": "Sorting objects using Comparable and Comparator interfaces.",
     "topic": "Sorting",
-    "sequence": "32"
+    "sequence": "32",
+    "isLatest": false
   },
   {
     "title": "Can you tell the difference between equals() method and equality operator (==) in Java?",
     "video": "https://youtu.be/jLe_zoyf8HI",
     "description": "Differences between equals() method and == operator in Java.",
     "topic": "Java Basics",
-    "sequence": "33"
+    "sequence": "33",
+    "isLatest": false
   },
   {
     "title": "Java Scanner Class Explained in Bengali | Part:1",
     "video": "https://youtu.be/fxdKvG47P8Q",
     "description": "Java Scanner class usage explained with examples.",
     "topic": "Java I/O",
-    "sequence": "34"
+    "sequence": "34",
+    "isLatest": false
   },{
     "title": "IOC, Dependency Injection, IOC Container, Coupling",
     "video": "https://youtu.be/oRBw1H2_C4k",
     "description": "Introduction to Inversion of Control (IOC), Dependency Injection, and the role of the IOC Container in reducing coupling.",
     "topic": "Spring Core Concepts",
-    "sequence": "35"
+    "sequence": "35",
+    "isLatest": false
   },
   {
     "title": "IOC Container, BeanFactory, Important APIs, Lazy & Eager Loading",
     "video": "https://youtu.be/ZHFmQ5P7dU0",
     "description": "Understanding the IOC Container, BeanFactory interface, key APIs, and loading strategies in Spring.",
     "topic": "Spring Core Concepts",
-    "sequence": "36"
+    "sequence": "36",
+    "isLatest": false
   },
   {
     "title": "Bean Scope, Singleton Scope and Prototype Scope",
     "video": "https://youtu.be/sBNSi2FCaf4",
     "description": "Exploring bean scopes in Spring including singleton and prototype scope configurations.",
     "topic": "Spring Bean Management",
-    "sequence": "37"
+    "sequence": "37",
+    "isLatest": false
   },
   {
     "title": "Autowiring, Autowiring Modes - byName, byType & constructor",
     "video": "https://youtu.be/0catrd8gf98",
     "description": "Understanding autowiring in Spring and different autowiring modes for dependency injection.",
     "topic": "Spring DI",
-    "sequence": "38"
+    "sequence": "38",
+    "isLatest": false
   },
   {
     "title": "@Configuration, @Bean, @Component, @ComponentScan in Spring",
     "video": "https://youtu.be/OXFVdoxX4SE",
     "description": "Learn Spring annotation-based configuration using @Configuration, @Bean, @Component, and component scanning.",
     "topic": "Spring Configuration",
-    "sequence": "39"
+    "sequence": "39",
+    "isLatest": false
   },
   {
     "title": "What if we remove @Configuration annotation in Spring?",
     "video": "https://youtu.be/lmQ0sy74QkA",
     "description": "Understanding the implications of removing @Configuration annotation in Spring applications.",
     "topic": "Spring Configuration",
-    "sequence": "40"
+    "sequence": "40",
+    "isLatest": false
   },
   {
     "title": "Spring JDBCTemplate, JDBC, Statement and PreparedStatement",
     "video": "https://youtu.be/jkc3RzTxzXE",
     "description": "Working with JDBCTemplate in Spring for database operations using JDBC statements.",
     "topic": "Spring Data Access",
-    "sequence": "41"
+    "sequence": "41",
+    "isLatest": false
   },
   {
     "title": "JDBCTemplate, RowMapper, ResultSetExtractor, BeanPropertyRowMapper Spring",
     "video": "https://youtu.be/NsytsxHTUro",
     "description": "Advanced JDBCTemplate usage with RowMapper, ResultSetExtractor, and BeanPropertyRowMapper.",
     "topic": "Spring Data Access",
-    "sequence": "42"
+    "sequence": "42",
+    "isLatest": false
   },
   {
     "title": "Model-View-Controller(MVC), Spring MVC",
     "video": "https://youtu.be/ZPVvmX_yntA",
     "description": "Introduction to Spring MVC architecture and its implementation of the MVC pattern.",
     "topic": "Spring MVC",
-    "sequence": "43"
+    "sequence": "43",
+    "isLatest": false
   },
   {
     "title": "Spring MVC with JSP (Java server Page)",
     "video": "https://youtu.be/bmHuIsqGqB0",
     "description": "Implementing Spring MVC applications using JSP as the view technology.",
     "topic": "Spring MVC",
-    "sequence": "44"
+    "sequence": "44",
+    "isLatest": false
   },
   {
     "title": "Spring MVC with JSP (Java server Page)",
     "video": "https://youtu.be/yMX1wRM8wco",
     "description": "Advanced implementation of Spring MVC with JSP view templates.",
     "topic": "Spring MVC",
-    "sequence": "45"
+    "sequence": "45",
+    "isLatest": false
   },
   {
     "title": "Spring MVC Form Handling Example & RequestParam Annotation",
     "video": "https://youtu.be/F40zq_lCas0",
     "description": "Handling web forms in Spring MVC using @RequestParam annotation.",
     "topic": "Spring MVC",
-    "sequence": "46"
+    "sequence": "46",
+    "isLatest": false
   },
   {
     "title": "How to Create Your First Model in Spring MVC?",
     "video": "https://youtu.be/zQ19yIbSGzM",
     "description": "Step-by-step guide to creating models in Spring MVC applications.",
     "topic": "Spring MVC",
-    "sequence": "47"
+    "sequence": "47",
+    "isLatest": false
   },
   {
     "title": "Data Binding in Spring MVC with Example",
     "video": "https://youtu.be/TG7DDnV9FmM",
     "description": "Understanding data binding mechanisms in Spring MVC with practical examples.",
     "topic": "Spring MVC",
-    "sequence": "48"
+    "sequence": "48",
+    "isLatest": false
   },
   {
     "title": "Two-Way Data Binding in Spring MVC",
     "video": "https://youtu.be/N37iNUwzfLw",
     "description": "Implementing bidirectional data binding in Spring MVC applications.",
     "topic": "Spring MVC",
-    "sequence": "49"
+    "sequence": "49",
+    "isLatest": false
+  },
+  {
+    "title": "Structured Query Language Tutorial. SQL-Ep:1",
+    "video": "https://www.youtube.com/watch?v=C41iLuLa20s",
+    "description": "Introduction to Structured Query Language (SQL) and its importance in database management.",
+    "topic": "SQL Basics",
+    "sequence": "50",
+    "isLatest": false
+  },
+  {
+    "title": "DDL: Data Definition Language Tutorial. SQL-Ep:2 : Part:1 - Create Database",
+    "video": "https://youtu.be/3RqS4mBMwfE",
+    "description": "Learn about Data Definition Language (DDL) and how to create databases using SQL.",
+    "topic": "SQL DDL",
+    "sequence": "51",
+    "isLatest": false
+  },
+  {
+    "title": "DDL: Data Definition Language Tutorial. SQL-Ep:3 : Part:2",
+    "video": "https://youtu.be/3kwv1tB2_7g",
+    "description": "Continuation of DDL concepts, including creating and modifying database objects.",
+    "topic": "SQL DDL",
+    "sequence": "52",
+    "isLatest": true
   }
+
 ]

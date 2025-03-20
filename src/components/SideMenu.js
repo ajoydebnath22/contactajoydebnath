@@ -19,7 +19,19 @@ const SideMenu = ({ isMobile, isMenuOpen, setIsMenuOpen }) => {
   useEffect(() => {
     fetch("/db/menu.json")
       .then((response) => response.json())
-      .then((data) => setMenuItems(data))
+      .then((data) => {
+        // **Sort menu items by order**
+        const sortedMenu = data.sort((a, b) => a.order - b.order);
+        
+        // **Sort submenus inside each menu item**
+        sortedMenu.forEach((item) => {
+          if (item.submenus && item.submenus.length > 0) {
+            item.submenus.sort((a, b) => b.order - a.order);
+          }
+        });
+
+        setMenuItems(sortedMenu);
+      })
       .catch((error) => console.error("Error fetching menu data:", error));
   }, []);
 
@@ -81,7 +93,7 @@ const SideMenu = ({ isMobile, isMenuOpen, setIsMenuOpen }) => {
           />
         </div>
 
-        {/* Filtered Menu List */}
+        {/* Filtered & Sorted Menu List */}
         <ul className="list-group">
           {filteredMenu.length > 0 ? (
             filteredMenu.map((item) => (

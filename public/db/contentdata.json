@@ -272,7 +272,7 @@
     "title": "Java Scanner Class",
     "description": "Learn how to use Java Scanner Class to take user input in Java.",
     "image": "/images/java.jpg",
-    "videos": ["https://youtu.be/fxdKvG47P8Q"],
+    "videos": ["https://youtu.be/fxdKvG47P8Q","https://youtu.be/vFTVYA2p1bg"],
     "googleDoc": "1TqNpntG5yiS8q-sMgsANS9G_xO04lkrm4Maw93yt9Ks",
     "theory": "Scanner is a utility class that allows reading input from various sources like keyboard and files."
   },

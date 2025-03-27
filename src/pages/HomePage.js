@@ -5,7 +5,7 @@ import BuyMeACoffee from '../components/BuyMeACoffee';
 import FloatingLinks from '../components/FloatingLinks';
 
 
-const ITEMS_PER_PAGE = 6;
+const ITEMS_PER_PAGE = 15;
 
 const HomePage = () => {
   const [videos, setVideos] = useState([]);

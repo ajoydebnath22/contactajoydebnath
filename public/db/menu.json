@@ -74,12 +74,5 @@
       { "name": "Data Binding in Spring MVC", "link": "/categories/spring-mvc-data-binding", "order": 12 },
       { "name": "Two Way Data Binding in Spring MVC", "link": "/categories/two-way-spring-mvc-data-binding", "order": 13 }
     ]
-  },
-  {
-    "name": "About",
-    "link": "/about",
-    "icon": "FaUser",
-    "order": 5,
-    "submenus": []
   }
 ]

@@ -412,6 +412,13 @@
     "description": "Continuation of DDL concepts, including creating and modifying database objects.",
     "topic": "SQL DDL",
     "sequence": "52",
+    "isLatest": false
+  },{
+    "title": "Java Scanner Class Explained in Bengali | Part:2",
+    "video": "https://youtu.be/vFTVYA2p1bg",
+    "description": "JJava Scanner Class Explained in Bengali. Token,Tokenization & Delimiter.",
+    "topic": "Java I/O",
+    "sequence": "53",
     "isLatest": true
   }
 

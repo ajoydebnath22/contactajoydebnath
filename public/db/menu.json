@@ -61,16 +61,18 @@
     "order": 4,
     "submenus": [
       { "name": "IOC, Dependency Injection & Coupling", "link": "/categories/spring-ioc", "order": 1 },
-      { "name": "IOC Container & BeanFactory", "link": "/categories/spring-ioc-container", "order": 2 },
+      { "name": "IOC Container,BeanFactory & Application Context", "link": "/categories/spring-ioc-container", "order": 2 },
       { "name": "Bean Scope (Singleton & Prototype)", "link": "/categories/spring-bean-scope", "order": 3 },
       { "name": "Autowiring & Modes", "link": "/categories/spring-autowiring", "order": 4 },
       { "name": "@Configuration & @Bean", "link": "/categories/spring-configuration", "order": 5 },
-      { "name": "Spring JDBC & PreparedStatement", "link": "/categories/spring-jdbc", "order": 6 },
-      { "name": "JDBCTemplate & RowMapper", "link": "/categories/spring-jdbctemplate", "order": 7 },
-      { "name": "Spring MVC Basics", "link": "/categories/spring-mvc", "order": 8 },
-      { "name": "Spring MVC with JSP", "link": "/categories/spring-mvc-jsp", "order": 9 },
-      { "name": "Spring MVC Form Handling", "link": "/categories/spring-mvc-form", "order": 10 },
-      { "name": "Data Binding in Spring MVC", "link": "/categories/spring-mvc-data-binding", "order": 11 }
+      { "name": "Remove @Configuration", "link": "/categories/spring-configuration_remove", "order": 6 },
+      { "name": "Spring JDBC & PreparedStatement", "link": "/categories/spring-jdbc", "order": 7 },
+      { "name": "JDBCTemplate & RowMapper", "link": "/categories/spring-jdbctemplate", "order": 8 },
+      { "name": "Spring MVC Basics", "link": "/categories/spring-mvc", "order": 9 },
+      { "name": "Spring MVC with JSP", "link": "/categories/spring-mvc-jsp", "order": 10 },
+      { "name": "Spring MVC Form Handling", "link": "/categories/spring-mvc-form", "order": 11 },
+      { "name": "Data Binding in Spring MVC", "link": "/categories/spring-mvc-data-binding", "order": 12 },
+      { "name": "Two Way Data Binding in Spring MVC", "link": "/categories/two-way-spring-mvc-data-binding", "order": 13 }
     ]
   },
   {

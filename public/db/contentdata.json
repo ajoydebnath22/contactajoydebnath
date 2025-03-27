@@ -285,10 +285,10 @@
     "theory": "IOC is a design principle in which the control of object creation and dependency management is given to a container."
   },
   "spring-ioc-container": {
-    "title": "IOC Container & BeanFactory",
+    "title": "IOC Container,BeanFactory & Application Context",
     "description": "Understanding IOC Container, BeanFactory, and important APIs in Spring.",
     "image": "/images/spring.jpg",
-    "videos": ["https://youtu.be/ZHFmQ5P7dU0"],
+    "videos": ["https://youtu.be/ZHFmQ5P7dU0","https://youtu.be/s1c1wh40DS0"],
     "googleDoc": "1TYouFQ17cll1TTz8YU5C-W8drVdPRosVhJq0fKpx6Yc",
     "theory": "Spring provides IOC containers like BeanFactory and ApplicationContext to manage bean lifecycles."
   },
@@ -316,6 +316,16 @@
     "googleDoc": "1VJD_KNIPjrHop1zlREl33WujEax6b8B1OcY5X5yZzrQ",
     "theory": "The @Configuration annotation marks a class as a source of bean definitions, while @Bean defines individual beans."
   },
+"spring-configuration_remove": {
+    "title": "What if we remove the @Configuration annotation in Spring?",
+    "description": "Learn how @Configuration and @Bean annotations work in Spring. And What If We Remove @Configuration",
+    "image": "/images/spring.jpg",
+    "videos": ["https://youtu.be/lmQ0sy74QkA"],
+    "googleDoc": "1EIQv7Na-IMgomu8U7BlFK0mBjNxfRJG-zpJ9qwdvgHA",
+    "theory": "The @Configuration annotation marks a class as a source of bean definitions, while @Bean defines individual beans."
+  },
+
+  
   "spring-jdbc": {
     "title": "Spring JDBC & PreparedStatement",
     "description": "Understanding JDBC Template and PreparedStatement in Spring.",
@@ -360,9 +370,17 @@
     "title": "Data Binding in Spring MVC",
     "description": "Understanding data binding in Spring MVC with examples.",
     "image": "/images/spring.jpg",
-    "videos": ["https://youtu.be/TG7DDnV9FmM", "https://youtu.be/N37iNUwzfLw"],
-    "googleDoc": "1d94q2HLuEftvVNvX2PitlKqEPLum8QE_Uu9q",
+    "videos": ["https://youtu.be/TG7DDnV9FmM"],
+    "googleDoc": "1bvht54AE0cRgBO_x8zBSQoKhrZCgXR9Zg_plZQHIMgM",
     "theory": "Data binding in Spring MVC allows automatic conversion of form input into Java objects."
+  },
+  "two-way-spring-mvc-data-binding": {
+    "title": "Two Way Data Binding in Spring MVC",
+    "description": "we can do the two tasks We can write to a variable, We can read from a variable.",
+    "image": "/images/spring.jpg",
+    "videos": ["https://youtu.be/N37iNUwzfLw"],
+    "googleDoc": "1alCx2BhHnbC4APICzWBtvQZhFiUxtAqzFSTe3YhwgR0",
+    "theory": "In Spring using the data binding concept, we can do the two tasks We can write to a variable, We can read from a variable"
   }
-  
+
 }

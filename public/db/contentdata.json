@@ -20,158 +20,160 @@
     "googleDoc": "1dDzbyyUHvdYfas3aHuORIC5ZgiwpiTASst9knxrZBJg",
     "theory": "DDL or Data Definition Language actually consists of the SQL commands that can be used to defining, altering, and deleting database structures such as tables, indexes, and schemas."
   },
-    "java-hello-world": {
-      "title": "First Java Program - Hello World",
-      "description": "Learn how to write your first Java program and print 'Hello World'.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/7F1TdO4KeiM"],
-      "googleDoc": "12FO8JQqDpCMtEEooj_gSIa3Rtj5hd079X45ENy0F9OY",
-      "theory": "A Java program starts execution from the `main` method. The `System.out.println` statement is used to print text on the console."
-    },
-    "java-environment-setup": {
-      "title": "Environment Setup & Path",
-      "description": "Learn how to set up the Java environment and why setting the path variable is important.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/p6MLxaCKr80"],
-      "googleDoc": "12FO8JQqDpCMtEEooj_gSIa3Rtj5hd079X45ENy0F9OY",
-      "theory": "To compile and run Java programs, we need to install JDK and configure the environment variable."
-    },
-    "java-class-object": {
-      "title": "Class, Object, Method, Constructors",
-      "description": "Understanding the core concepts of Object-Oriented Programming in Java.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/vFpK067HbCs"],
-      "googleDoc": "1PFeREC64giTSEejMhpjHYMAw1nXaxOOhHVKbsxKrN-w",
-      "theory": "A class is a blueprint for objects, and objects are instances of classes."
-    },
-    "java-abstraction": {
-      "title": "Abstraction & Abstract Class",
-      "description": "Learn about abstraction and how abstract classes work in Java.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/vgKCmdgcI_0"],
-      "googleDoc": "14nHnl-kAuYrisbjwbfDcyqD5349td6gbJwn-4JOktpY",
-      "theory": "Abstraction hides implementation details and only exposes the necessary functionality."
-    },
-    "java-interface": {
-      "title": "Abstraction & Interface",
-      "description": "Understanding interfaces in Java and their role in abstraction.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/E86QsfsNTIY"],
-      "googleDoc": "14nHnl-kAuYrisbjwbfDcyqD5349td6gbJwn-4JOktpY",
-      "theory": "An interface defines a contract that classes must implement."
-    },
-    "java-inheritance": {
-      "title": "Inheritance & Multiple Inheritance Issue",
-      "description": "Exploring inheritance and why multiple inheritance is not allowed in Java.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/y6HgMh-I45M"],
-      "googleDoc": "1NyFyyt3a6jQGONeqP4SgI9ZIZt9gsqpQrYo06WIKNyM",
-      "theory": "Inheritance allows a class to acquire properties and behaviors from another class."
-    },
-    "java-polymorphism": {
-      "title": "Polymorphism & Overloading",
-      "description": "Understanding method overloading and method overriding in Java.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/mCMqkKGrb7s"],
-      "googleDoc": "16CTBB7uPMQFYLsOfqYNc6l31S7DQFzoT3QGkGUhvnd4",
-      "theory": "Polymorphism allows methods to have different behaviors based on the context."
-    },
-    "java-encapsulation": {
-      "title": "Encapsulation & JavaBean Class",
-      "description": "Learn about encapsulation, data hiding, and JavaBean class.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/ZH4GwBWXpPQ"],
-      "googleDoc": "1GeDW79i8z9o531fRhuoK0CnVBx5Oqm-umpkEfYMJpMY",
-      "theory": "Encapsulation protects data by restricting direct access to variables."
-    },
-    "java-access-modifiers": {
-      "title": "Access Modifiers",
-      "description": "Exploring private, public, default, and protected access modifiers in Java.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/Fkkcc6ypCtw"],
-      "googleDoc": "1cCwbaznqUOdFIiYKtGihk8V0VBuIgljnvbYqu9Goeec",
-      "theory": "Access modifiers control the visibility of classes, methods, and variables."
-    },
-    "java-static-keyword": {
-      "title": "Static Keyword",
-      "description": "Understanding static variables, methods, blocks, and nested classes.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/tgzUgat88_A"],
-      "googleDoc": "1JXoCSSz0IdsUCaA96G0Gfimhj17UiJcqGYGfYsOoibE",
-      "theory": "Static members belong to the class rather than instances of the class."
-    },
-    "java-final-keyword": {
-      "title": "Final Keyword",
-      "description": "Learn how to use the final keyword with variables, methods, and classes.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/GaprusN0uNE"],
-      "googleDoc": "1lpZBQ1S8uT7Pci4gSL4PfbAi17buFgm5DJGbDvyL69M",
-      "theory": "The `final` keyword prevents modification of variables, methods, and inheritance."
-    },
-    "java-this-keyword": {
-      "title": "'this' keyword",
-      "description": "Understanding the `this` keyword and its applications in Java.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/x_TJINrbqtk"],
-      "googleDoc": "1XN9m33Uelc6nn6R4eP168TKazEljOzH-bEthHOsabGc",
-      "theory": "The `this` keyword refers to the current instance of a class."
-    },
-    "java-super-keyword": {
-      "title": "'super' keyword",
-      "description": "Exploring the `super` keyword in Java and its role in inheritance.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/Jj1E2M6e-O0"],
-      "googleDoc": "1XN9m33Uelc6nn6R4eP168TKazEljOzH-bEthHOsabGc",
-      "theory": "The `super` keyword is used to refer to the parent class's constructor or methods."
-    },
-    "String-StringPool-Intern-Method": {
-      "title": "String, String Pool, Intern Method",
-      "description": "Exploring the String, String Pool, Intern method in Java",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/vw8mOroR-cg"],
-      "googleDoc": "1LYwsMTjhDPtkoj6YsM2P0UP1unaLkP-Ipj7UPKSldn4",
-      "theory": "String, String Pool, Intern Method"
-    },
-    "java-collection-framework": {
-      "title": "Collection Framework",
-      "description": "An introduction to Java's Collection Framework and its various implementations.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/DFzzcqt7Gvk"],
-      "googleDoc": "1_NPaRlNrT6hB776I_XK3JDG4i-4ace038iYB60Jlwco",
-      "theory": "The Collection Framework provides reusable data structures and algorithms."
-    },
-    "java-arraylist": {
-      "title": "ArrayList & ListIterator",
-      "description": "Understanding ArrayList, its methods, and ListIterator in Java.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/O3QrQHQyiLQ"],
-      "googleDoc": "15C7enJRHU40ffTl1ZjWJ2UeQWoeHyA-PHa-cICeo_6E",
-      "theory": "ArrayList is a dynamic array implementation in Java."
-    },
-    "java-linkedlist": {
-      "title": "LinkedList",
-      "description": "Exploring LinkedList, its methods, and internal working.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/jw_KoDctxtg"],
-      "googleDoc": "1OeARDCCzHnj4km8z6rHOJamw0lxLym3ElixAA_sT_74",
-      "theory": "LinkedList is a doubly-linked list implementation in Java."
-    },
-    "java-hashset": {
-      "title": "HashSet & How It Works",
-      "description": "Understanding HashSet and how it works internally in Java.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/7YPTXWkqzV8", "https://youtu.be/nQOLOBlgw-w"],
-      "googleDoc": "1SBrXs1P6empuOLcHWtDw-j4pmgeZgbm3ugvBplH1Jok",
-      "theory": "HashSet stores unique elements and does not maintain insertion order."
-    },
-    "java-singleton-pattern": {
-      "title": "Singleton Design Pattern",
-      "description": "Learn about Singleton Design Pattern in Java with early and lazy instantiation.",
-      "image": "/images/java.jpg",
-      "videos": ["https://youtu.be/UHtUOSvqVs4", "https://youtu.be/gplmcZV7gp4"],
-      "googleDoc": "1O2qQD5huUzhP4DKIqPEAPmQwLeCqxjXYWLJqThdY_Bc",
-      "theory": "Singleton ensures that only one instance of a class exists at a time."
-    },
+  "dml": {
+    "title": "DML (Data Manipulation Language)",
+    "description": "Data Manipulation Language (DML) is a subset of SQL. It is used to interact with and manipulate the data store in a database. It enables users to perform operations that involve retrieving, inserting, updating, and deleting data records.",
+    "image": "/images/sql.jpg",
+    "videos": [
+      "https://youtu.be/Oq0mc4zAxQY"
+    ],
+    "googleDoc": "1dDzbyyUHvdYfas3aHuORIC5ZgiwpiTASst9knxrZBJg",
+    "theory": "DDL or Data Definition Language actually consists of the SQL commands that can be used to defining, altering, and deleting database structures such as tables, indexes, and schemas."
+  },
+  "java-hello-world": {
+    "title": "First Java Program - Hello World",
+    "description": "Learn how to write your first Java program and print 'Hello World'.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/7F1TdO4KeiM"],
+    "googleDoc": "12FO8JQqDpCMtEEooj_gSIa3Rtj5hd079X45ENy0F9OY",
+    "theory": "A Java program starts execution from the `main` method. The `System.out.println` statement is used to print text on the console."
+  },
+  "java-environment-setup": {
+    "title": "Environment Setup & Path",
+    "description": "Learn how to set up the Java environment and why setting the path variable is important.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/p6MLxaCKr80"],
+    "googleDoc": "12FO8JQqDpCMtEEooj_gSIa3Rtj5hd079X45ENy0F9OY",
+    "theory": "To compile and run Java programs, we need to install JDK and configure the environment variable."
+  },
+  "java-class-object": {
+    "title": "Class, Object, Method, Constructors",
+    "description": "Understanding the core concepts of Object-Oriented Programming in Java.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/vFpK067HbCs"],
+    "googleDoc": "1PFeREC64giTSEejMhpjHYMAw1nXaxOOhHVKbsxKrN-w",
+    "theory": "A class is a blueprint for objects, and objects are instances of classes."
+  },
+  "java-abstraction": {
+    "title": "Abstraction & Abstract Class",
+    "description": "Learn about abstraction and how abstract classes work in Java.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/vgKCmdgcI_0"],
+    "googleDoc": "14nHnl-kAuYrisbjwbfDcyqD5349td6gbJwn-4JOktpY",
+    "theory": "Abstraction hides implementation details and only exposes the necessary functionality."
+  },
+  "java-interface": {
+    "title": "Abstraction & Interface",
+    "description": "Understanding interfaces in Java and their role in abstraction.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/E86QsfsNTIY"],
+    "googleDoc": "14nHnl-kAuYrisbjwbfDcyqD5349td6gbJwn-4JOktpY",
+    "theory": "An interface defines a contract that classes must implement."
+  },
+  "java-inheritance": {
+    "title": "Inheritance & Multiple Inheritance Issue",
+    "description": "Exploring inheritance and why multiple inheritance is not allowed in Java.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/y6HgMh-I45M"],
+    "googleDoc": "1NyFyyt3a6jQGONeqP4SgI9ZIZt9gsqpQrYo06WIKNyM",
+    "theory": "Inheritance allows a class to acquire properties and behaviors from another class."
+  },
+  "java-polymorphism": {
+    "title": "Polymorphism & Overloading",
+    "description": "Understanding method overloading and method overriding in Java.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/mCMqkKGrb7s"],
+    "googleDoc": "16CTBB7uPMQFYLsOfqYNc6l31S7DQFzoT3QGkGUhvnd4",
+    "theory": "Polymorphism allows methods to have different behaviors based on the context."
+  },
+  "java-encapsulation": {
+    "title": "Encapsulation & JavaBean Class",
+    "description": "Learn about encapsulation, data hiding, and JavaBean class.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/ZH4GwBWXpPQ"],
+    "googleDoc": "1GeDW79i8z9o531fRhuoK0CnVBx5Oqm-umpkEfYMJpMY",
+    "theory": "Encapsulation protects data by restricting direct access to variables."
+  },
+  "java-access-modifiers": {
+    "title": "Access Modifiers",
+    "description": "Exploring private, public, default, and protected access modifiers in Java.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/Fkkcc6ypCtw"],
+    "googleDoc": "1cCwbaznqUOdFIiYKtGihk8V0VBuIgljnvbYqu9Goeec",
+    "theory": "Access modifiers control the visibility of classes, methods, and variables."
+  },
+  "java-static-keyword": {
+    "title": "Static Keyword",
+    "description": "Understanding static variables, methods, blocks, and nested classes.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/tgzUgat88_A"],
+    "googleDoc": "1JXoCSSz0IdsUCaA96G0Gfimhj17UiJcqGYGfYsOoibE",
+    "theory": "Static members belong to the class rather than instances of the class."
+  },
+  "java-final-keyword": {
+    "title": "Final Keyword",
+    "description": "Learn how to use the final keyword with variables, methods, and classes.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/GaprusN0uNE"],
+    "googleDoc": "1lpZBQ1S8uT7Pci4gSL4PfbAi17buFgm5DJGbDvyL69M",
+    "theory": "The `final` keyword prevents modification of variables, methods, and inheritance."
+  },
+  "java-this-keyword": {
+    "title": "'this' keyword",
+    "description": "Understanding the `this` keyword and its applications in Java.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/x_TJINrbqtk"],
+    "googleDoc": "1XN9m33Uelc6nn6R4eP168TKazEljOzH-bEthHOsabGc",
+    "theory": "The `this` keyword refers to the current instance of a class."
+  },
+  "java-super-keyword": {
+    "title": "'super' keyword",
+    "description": "Exploring the `super` keyword in Java and its role in inheritance.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/Jj1E2M6e-O0"],
+    "googleDoc": "1XN9m33Uelc6nn6R4eP168TKazEljOzH-bEthHOsabGc",
+    "theory": "The `super` keyword is used to refer to the parent class's constructor or methods."
+  },
+  "String-StringPool-Intern-Method": {
+    "title": "String, String Pool, Intern Method",
+    "description": "Exploring the String, String Pool, Intern method in Java",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/vw8mOroR-cg"],
+    "googleDoc": "1LYwsMTjhDPtkoj6YsM2P0UP1unaLkP-Ipj7UPKSldn4",
+    "theory": "String, String Pool, Intern Method"
+  },
+  "java-collection-framework": {
+    "title": "Collection Framework",
+    "description": "An introduction to Java's Collection Framework and its various implementations.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/DFzzcqt7Gvk"],
+    "googleDoc": "1_NPaRlNrT6hB776I_XK3JDG4i-4ace038iYB60Jlwco",
+    "theory": "The Collection Framework provides reusable data structures and algorithms."
+  },
+  "java-arraylist": {
+    "title": "ArrayList & ListIterator",
+    "description": "Understanding ArrayList, its methods, and ListIterator in Java.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/O3QrQHQyiLQ"],
+    "googleDoc": "15C7enJRHU40ffTl1ZjWJ2UeQWoeHyA-PHa-cICeo_6E",
+    "theory": "ArrayList is a dynamic array implementation in Java."
+  },
+  "java-linkedlist": {
+    "title": "LinkedList",
+    "description": "Exploring LinkedList, its methods, and internal working.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/jw_KoDctxtg"],
+    "googleDoc": "1OeARDCCzHnj4km8z6rHOJamw0lxLym3ElixAA_sT_74",
+    "theory": "LinkedList is a doubly-linked list implementation in Java."
+  },
+  "java-hashset": {
+    "title": "HashSet & How It Works",
+    "description": "Understanding HashSet and how it works internally in Java.",
+    "image": "/images/java.jpg",
+    "videos": ["https://youtu.be/7YPTXWkqzV8", "https://youtu.be/nQOLOBlgw-w"],
+    "googleDoc": "1SBrXs1P6empuOLcHWtDw-j4pmgeZgbm3ugvBplH1Jok",
+    "theory": "HashSet stores unique elements and does not maintain insertion order."
+  },
   "java-singleton-pattern": {
     "title": "Singleton Design Pattern",
     "description": "Learn about Singleton Design Pattern in Java with early and lazy instantiation.",

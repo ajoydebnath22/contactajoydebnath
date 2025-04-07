@@ -419,6 +419,13 @@
     "description": "Java Scanner Class Explained in Bengali. Token,Tokenization & Delimiter.",
     "topic": "Java I/O",
     "sequence": "53",
+    "isLatest": false
+  },{
+    "title": "DML: Data Manipulation Language Tutorial. Part:1 - SQL-Ep:4 🔥",
+    "video": "https://youtu.be/Oq0mc4zAxQY",
+    "description": "DML Squery Explained in Bengali. Insert Operation,Bulk Insert,System Variable",
+    "topic": "SQL DML",
+    "sequence": "54",
     "isLatest": true
   }
 

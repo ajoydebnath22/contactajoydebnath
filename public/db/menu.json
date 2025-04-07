@@ -13,7 +13,8 @@
     "order": 2,
     "submenus": [
       { "name": "SQL: Structured Query Language", "link": "/categories/sql", "order": 1 },
-      { "name": "DDL: Data Definition Language", "link": "/categories/ddl", "order": 2 }
+      { "name": "DDL: Data Definition Language", "link": "/categories/ddl", "order": 2 },
+      { "name": "DML: Data Manipulation Language", "link": "/categories/dml", "order": 3 }
     ]
   },
   {
